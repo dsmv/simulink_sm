@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['res_5fbase_5fcmdentry',['RES_BASE_CmdEntry',['../d4/d99/brdserv_8h.html#ac0658a969a75701aa76e4fdf8ccd30f0',1,'brdserv.h']]],
+  ['res_5fbase_5fcmdlist',['RES_BASE_CmdList',['../d4/d99/brdserv_8h.html#a5fc425f9f24616f42bff9030b1c1c943',1,'brdserv.h']]],
+  ['res_5fbase_5fresourcelist',['RES_BASE_ResourceList',['../d4/d99/brdserv_8h.html#ac6b415217b6e673bb204cde52912e61b',1,'brdserv.h']]],
+  ['res_5fbrd_5fgetreslist',['RES_BRD_GetResList',['../d4/d99/brdserv_8h.html#acbcf307b1b69c957d6b5da8f123a6636',1,'brdserv.h']]],
+  ['res_5fbrd_5freslist',['RES_BRD_ResList',['../d4/d99/brdserv_8h.html#a1733f5ac4039cdd628212a80ac132441',1,'brdserv.h']]],
+  ['res_5fbrd_5freslistitem',['RES_BRD_ResListItem',['../d4/d99/brdserv_8h.html#a426e22738fa955038976fdd3cb252d08',1,'brdserv.h']]],
+  ['res_5fsub_5fcmdentry',['RES_SUB_CmdEntry',['../d4/d99/brdserv_8h.html#aac0a6b7353954eb9dbe7f0f3a5610f02',1,'brdserv.h']]],
+  ['res_5fsub_5fcmdlist',['RES_SUB_CmdList',['../d4/d99/brdserv_8h.html#aa29da7040d3e08259baea9f9b905f6bf',1,'brdserv.h']]],
+  ['res_5fsub_5fresourcelist',['RES_SUB_ResourceList',['../d4/d99/brdserv_8h.html#aca53703d25bf5b5c6690d630ab74c1e6',1,'brdserv.h']]],
+  ['res_5fsub_5ftechparams',['RES_SUB_TechParams',['../d4/d99/brdserv_8h.html#a5258194400acf74b4247529b1ec2e78f',1,'brdserv.h']]],
+  ['res_5fsub_5funreadableregs',['RES_SUB_UnreadableRegs',['../d4/d99/brdserv_8h.html#a573c7bc27c5eb44550d6e186b81615f4',1,'brdserv.h']]],
+  ['res_5ftech_5fdevsupportentry',['RES_TECH_DevSupportEntry',['../d4/d99/brdserv_8h.html#a56e75ec969ac02cd16636544e5632926',1,'brdserv.h']]],
+  ['res_5ftech_5fendpoint',['RES_TECH_EndPoint',['../d4/d99/brdserv_8h.html#a23d48cf27d797540ff7b3dd84373cee2',1,'brdserv.h']]],
+  ['res_5ftech_5fmainresourcelist',['RES_TECH_MainResourceList',['../d4/d99/brdserv_8h.html#a5fa6771280d1fc3f9af2871cb182679f',1,'brdserv.h']]],
+  ['res_5ftech_5fmainsubunitlist',['RES_TECH_MainSubunitList',['../d4/d99/brdserv_8h.html#a82b5d3dc48987cadfcf13db4f56a0184',1,'brdserv.h']]],
+  ['res_5ftech_5fsubunitsupport',['RES_TECH_SubunitSupport',['../d4/d99/brdserv_8h.html#aaddb3e48f5e9da60169b1892c6218d6e',1,'brdserv.h']]],
+  ['res_5ftech_5funreadableregs',['RES_TECH_UnreadableRegs',['../d4/d99/brdserv_8h.html#aa8efe60d994f1c52123ed0085f261f9f',1,'brdserv.h']]]
+];

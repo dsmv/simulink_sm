@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SIMULINK_ADC: Файл E:/_github/simulink_sm/simulink_adc/src/bardy/fileipc.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SIMULINK_ADC
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Приём данных от АЦП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','Поиск');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_9cc6fcdd0606c05e12b8eb4ba0303406.html">bardy</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл fileipc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../df/d1b/ipclib_8h_source.html">ipclib.h</a>&quot;</code><br />
+</div>
+<p><a href="../../d1/dd6/fileipc_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a6c16e630d0a999ea29a7a075ec74796e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796e">IPC_flags</a> { <br />
+&#160;&#160;<a class="el" href="../../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796eabfe4797bc2d26dbe2cfa9a125ec66780">IPC_CREATE_FILE</a> = 0x1, 
+<a class="el" href="../../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796ea027dea0a35b15ce12053e7b553942429">IPC_OPEN_FILE</a> = 0x2, 
+<a class="el" href="../../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796ea0b80eee6ca166d670003ade973e3ff24">IPC_FILE_RDONLY</a> = 0x10, 
+<a class="el" href="../../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796ea20ce84d74fde152adb34e71a0a951979">IPC_FILE_WRONLY</a> = 0x20, 
+<br />
+&#160;&#160;<a class="el" href="../../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796ea7397d419f4fecd145458e6a3e29f7fcf">IPC_FILE_RDWR</a> = 0x40, 
+<a class="el" href="../../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796eac757b5890d74acfea2d9f30002f736cc">IPC_FILE_DIRECT</a> = 0x80
+<br />
+ }</td></tr>
+<tr class="separator:a6c16e630d0a999ea29a7a075ec74796e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4129d1292422fa15424a32377498e038"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#a4129d1292422fa15424a32377498e038">IPC_posMethod</a> { <a class="el" href="../../d1/dd6/fileipc_8h.html#a4129d1292422fa15424a32377498e038ae80e4b259a941ae352b256d01e34271c">IPC_FILE_BEG</a> = 0, 
+<a class="el" href="../../d1/dd6/fileipc_8h.html#a4129d1292422fa15424a32377498e038ab9d267fe623adc4225c2700d6333e241">IPC_FILE_CUR</a> = 1, 
+<a class="el" href="../../d1/dd6/fileipc_8h.html#a4129d1292422fa15424a32377498e038a7a93f63c94c9faaab80910b689d42516">IPC_FILE_END</a> = 2
+ }</td></tr>
+<tr class="separator:a4129d1292422fa15424a32377498e038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b67aa7e5d17ca06f61baacab371dde3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#a1b67aa7e5d17ca06f61baacab371dde3">IPC_Attribute</a> { <a class="el" href="../../d1/dd6/fileipc_8h.html#a1b67aa7e5d17ca06f61baacab371dde3ab6d46edbdb66a0e6db3004be29965450">IPC_FILE_NORMAL</a> = 0, 
+<a class="el" href="../../d1/dd6/fileipc_8h.html#a1b67aa7e5d17ca06f61baacab371dde3a13c0d2b1b9d151407d212f8e3057c896">IPC_FILE_NOBUFFER</a> = 1, 
+<a class="el" href="../../d1/dd6/fileipc_8h.html#a1b67aa7e5d17ca06f61baacab371dde3a8b72eb8ebcaf19c1ab19937ba0460e39">IPC_FILE_WRTHROUGH</a> = 2
+ }</td></tr>
+<tr class="separator:a1b67aa7e5d17ca06f61baacab371dde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ad54db1c2bf7fe08e836932c471e47458"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#ad54db1c2bf7fe08e836932c471e47458">IPC_openFile</a> (const <a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *name, int flags)</td></tr>
+<tr class="memdesc:ad54db1c2bf7fe08e836932c471e47458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция открывает файл  <a href="#ad54db1c2bf7fe08e836932c471e47458">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad54db1c2bf7fe08e836932c471e47458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c6dd6bc1604122652d10590864c2a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#ab8c6dd6bc1604122652d10590864c2a3">IPC_openFileEx</a> (const <a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *name, int flags, int attr)</td></tr>
+<tr class="memdesc:ab8c6dd6bc1604122652d10590864c2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция открывает файл с дополнительными параметрами  <a href="#ab8c6dd6bc1604122652d10590864c2a3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab8c6dd6bc1604122652d10590864c2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d3dc7565ab1720f844f656fdd733cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#af4d3dc7565ab1720f844f656fdd733cc">IPC_closeFile</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> handle)</td></tr>
+<tr class="memdesc:af4d3dc7565ab1720f844f656fdd733cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция закрывает файл  <a href="#af4d3dc7565ab1720f844f656fdd733cc">Подробнее...</a><br /></td></tr>
+<tr class="separator:af4d3dc7565ab1720f844f656fdd733cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb97c75a41663d9a34a353522ea77c46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#afb97c75a41663d9a34a353522ea77c46">IPC_readFile</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> handle, void *data, int size)</td></tr>
+<tr class="memdesc:afb97c75a41663d9a34a353522ea77c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция чтения из файла  <a href="#afb97c75a41663d9a34a353522ea77c46">Подробнее...</a><br /></td></tr>
+<tr class="separator:afb97c75a41663d9a34a353522ea77c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65587c371cae235044190d24f13ebb57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#a65587c371cae235044190d24f13ebb57">IPC_writeFile</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> handle, void *data, int size)</td></tr>
+<tr class="memdesc:a65587c371cae235044190d24f13ebb57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция записи в файл  <a href="#a65587c371cae235044190d24f13ebb57">Подробнее...</a><br /></td></tr>
+<tr class="separator:a65587c371cae235044190d24f13ebb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b58bd0091a5e711e974b1c57eb96974"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#a2b58bd0091a5e711e974b1c57eb96974">IPC_setPosFile</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> handle, int pos, int method)</td></tr>
+<tr class="memdesc:a2b58bd0091a5e711e974b1c57eb96974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция установки позиции в файле  <a href="#a2b58bd0091a5e711e974b1c57eb96974">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2b58bd0091a5e711e974b1c57eb96974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb15f29aec7447c965fc9aad61717ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/fileipc_8h.html#afbb15f29aec7447c965fc9aad61717ed">IPC_getFileSize</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> handle, long long *size)</td></tr>
+<tr class="memdesc:afbb15f29aec7447c965fc9aad61717ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для получения размера файла  <a href="#afbb15f29aec7447c965fc9aad61717ed">Подробнее...</a><br /></td></tr>
+<tr class="separator:afbb15f29aec7447c965fc9aad61717ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a1b67aa7e5d17ca06f61baacab371dde3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b67aa7e5d17ca06f61baacab371dde3">&#9670;&nbsp;</a></span>IPC_Attribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d1/dd6/fileipc_8h.html#a1b67aa7e5d17ca06f61baacab371dde3">IPC_Attribute</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a1b67aa7e5d17ca06f61baacab371dde3ab6d46edbdb66a0e6db3004be29965450"></a>IPC_FILE_NORMAL&#160;</td><td class="fielddoc"><p>for WINDOWS - FILE_ATTRIBUTE_NORMAL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b67aa7e5d17ca06f61baacab371dde3a13c0d2b1b9d151407d212f8e3057c896"></a>IPC_FILE_NOBUFFER&#160;</td><td class="fielddoc"><p>for WINDOWS - FILE_FLAG_NO_BUFFERING </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1b67aa7e5d17ca06f61baacab371dde3a8b72eb8ebcaf19c1ab19937ba0460e39"></a>IPC_FILE_WRTHROUGH&#160;</td><td class="fielddoc"><p>for WINDOWS - FILE_FLAG_WRITE_THROUGH </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d1/dd6/fileipc_8h_source.html">fileipc.h</a> строка <a class="el" href="../../d1/dd6/fileipc_8h_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a id="a6c16e630d0a999ea29a7a075ec74796e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c16e630d0a999ea29a7a075ec74796e">&#9670;&nbsp;</a></span>IPC_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796e">IPC_flags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a6c16e630d0a999ea29a7a075ec74796eabfe4797bc2d26dbe2cfa9a125ec66780"></a>IPC_CREATE_FILE&#160;</td><td class="fielddoc"><p>Всегда создает файл </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c16e630d0a999ea29a7a075ec74796ea027dea0a35b15ce12053e7b553942429"></a>IPC_OPEN_FILE&#160;</td><td class="fielddoc"><p>Открывает файл (если не существует, то создается) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c16e630d0a999ea29a7a075ec74796ea0b80eee6ca166d670003ade973e3ff24"></a>IPC_FILE_RDONLY&#160;</td><td class="fielddoc"><p>Открывает файл в режиме только для чтения (если не существует, то ошибка) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c16e630d0a999ea29a7a075ec74796ea20ce84d74fde152adb34e71a0a951979"></a>IPC_FILE_WRONLY&#160;</td><td class="fielddoc"><p>Открывает файл в режиме только для записи (если не существует, то создается) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c16e630d0a999ea29a7a075ec74796ea7397d419f4fecd145458e6a3e29f7fcf"></a>IPC_FILE_RDWR&#160;</td><td class="fielddoc"><p>Открывает файл в режиме записи/чтения (если не существует, то создается) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6c16e630d0a999ea29a7a075ec74796eac757b5890d74acfea2d9f30002f736cc"></a>IPC_FILE_DIRECT&#160;</td><td class="fielddoc"><p>Открывает файл в режиме прямого записи/чтения (Linux) </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d1/dd6/fileipc_8h_source.html">fileipc.h</a> строка <a class="el" href="../../d1/dd6/fileipc_8h_source.html#l00013">13</a></p>
+
+</div>
+</div>
+<a id="a4129d1292422fa15424a32377498e038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4129d1292422fa15424a32377498e038">&#9670;&nbsp;</a></span>IPC_posMethod</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d1/dd6/fileipc_8h.html#a4129d1292422fa15424a32377498e038">IPC_posMethod</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a4129d1292422fa15424a32377498e038ae80e4b259a941ae352b256d01e34271c"></a>IPC_FILE_BEG&#160;</td><td class="fielddoc"><p>позиция файла с начала файла </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4129d1292422fa15424a32377498e038ab9d267fe623adc4225c2700d6333e241"></a>IPC_FILE_CUR&#160;</td><td class="fielddoc"><p>позиция файла с текущей позиции </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4129d1292422fa15424a32377498e038a7a93f63c94c9faaab80910b689d42516"></a>IPC_FILE_END&#160;</td><td class="fielddoc"><p>позиция файла от конца файла </p>
+</td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d1/dd6/fileipc_8h_source.html">fileipc.h</a> строка <a class="el" href="../../d1/dd6/fileipc_8h_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="af4d3dc7565ab1720f844f656fdd733cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d3dc7565ab1720f844f656fdd733cc">&#9670;&nbsp;</a></span>IPC_closeFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_closeFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция закрывает файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>- дескриптор IPC </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки </dd></dl>
+
+<p class="reference">Используется в <a class="el" href="../../d9/d58/adc__ctrl_8cpp_source.html#l01078">DirWriteIntoFile()</a>.</p>
+
+</div>
+</div>
+<a id="afbb15f29aec7447c965fc9aad61717ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb15f29aec7447c965fc9aad61717ed">&#9670;&nbsp;</a></span>IPC_getFileSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_getFileSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long *&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для получения размера файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>- дескриптор IPC </td></tr>
+    <tr><td class="paramname">size</td><td>- размер файла </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="ad54db1c2bf7fe08e836932c471e47458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad54db1c2bf7fe08e836932c471e47458">&#9670;&nbsp;</a></span>IPC_openFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> IPC_openFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция открывает файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- имя файла или файла устройства </td></tr>
+    <tr><td class="paramname">flags</td><td>- флаги </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>дескриптор IPC или NULL </dd></dl>
+
+</div>
+</div>
+<a id="ab8c6dd6bc1604122652d10590864c2a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c6dd6bc1604122652d10590864c2a3">&#9670;&nbsp;</a></span>IPC_openFileEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> IPC_openFileEx </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>attr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция открывает файл с дополнительными параметрами </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- имя файла или файла устройства </td></tr>
+    <tr><td class="paramname">flags</td><td>- флаги </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>дескриптор IPC или NULL </dd></dl>
+
+<p class="reference">Используется в <a class="el" href="../../d9/d58/adc__ctrl_8cpp_source.html#l01078">DirWriteIntoFile()</a>.</p>
+
+</div>
+</div>
+<a id="afb97c75a41663d9a34a353522ea77c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb97c75a41663d9a34a353522ea77c46">&#9670;&nbsp;</a></span>IPC_readFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_readFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция чтения из файла </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>- дескриптор файла </td></tr>
+    <tr><td class="paramname">data</td><td>- указатель на буфер данных </td></tr>
+    <tr><td class="paramname">size</td><td>- размер буфера данных </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>количество прочитанных байт </dd></dl>
+
+</div>
+</div>
+<a id="a2b58bd0091a5e711e974b1c57eb96974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b58bd0091a5e711e974b1c57eb96974">&#9670;&nbsp;</a></span>IPC_setPosFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_setPosFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>method</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция установки позиции в файле </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>- дескриптор IPC </td></tr>
+    <tr><td class="paramname">pos</td><td>- новая позиция в файле </td></tr>
+    <tr><td class="paramname">method</td><td>- способ получения новой позиции </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>код ошибки </dd></dl>
+
+</div>
+</div>
+<a id="a65587c371cae235044190d24f13ebb57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65587c371cae235044190d24f13ebb57">&#9670;&nbsp;</a></span>IPC_writeFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_writeFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция записи в файл </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>- дескриптор IPC </td></tr>
+    <tr><td class="paramname">data</td><td>- указатель на буфер данных </td></tr>
+    <tr><td class="paramname">size</td><td>- размер буфера данных </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>количество записанных байт </dd></dl>
+
+<p class="reference">Используется в <a class="el" href="../../d9/d58/adc__ctrl_8cpp_source.html#l01282">MultiBlkProcWrDir()</a> и <a class="el" href="../../d9/d58/adc__ctrl_8cpp_source.html#l01218">SimpleProcWrDir()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

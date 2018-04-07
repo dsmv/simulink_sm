@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="work">
+      <UniqueIdentifier>{2e381996-9e72-4209-9b84-7a049f5d9ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bardy">
+      <UniqueIdentifier>{ec620f52-7016-47f1-9be5-09b4670788b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bardy\ctrladmpro">
+      <UniqueIdentifier>{72bc1871-3272-467b-82bc-fc00043d2861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConsoleTestApi">
+      <UniqueIdentifier>{6f383251-c9a2-453e-acaf-7ae24053b67d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin64">
+      <UniqueIdentifier>{5ae82ed8-9897-4185-8bd0-a2e9e05d806e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="work\CL_AMBPEX.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\stdafx.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_Test.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\ctrladmpro\ctrladmpro.h">
+      <Filter>bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\ctrladmpro\ctrlreg.h">
+      <Filter>bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\brd.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\brdapi.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\brderr.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\brdfunx.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\brdpu.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\brdserv.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\brdstrm.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\Ctrl.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\ctrlstrm.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\CtrlSvm.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\extn_andor.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\icr.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\pcidef.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\printf_oem.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\realdelay.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\utypes.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleTestApi\ConsoleTestApi.h">
+      <Filter>ConsoleTestApi</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleTestApi\TableApi.h">
+      <Filter>ConsoleTestApi</Filter>
+    </ClInclude>
+    <ClInclude Include="work\adc_ctrl.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\ctrladmpro\ctrladc.h">
+      <Filter>bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\ctrladmpro\ctrlcmpsc.h">
+      <Filter>bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\ctrladmpro\ctrlsdram.h">
+      <Filter>bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\ctrladmpro\mu_ctrl.h">
+      <Filter>bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_SimulinkAdc.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_SimulinkShared.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TL_SharedMemoryWrapper.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_BaseSource.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_SourceImit.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\parse_cmd.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\global.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\exceptinfo.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_SourceAdc.h">
+      <Filter>work</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="work\CL_AMBPEX.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\stdafx.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleTestApi\ConsoleTestApi.cpp">
+      <Filter>ConsoleTestApi</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleTestApi\TableApi.cpp">
+      <Filter>ConsoleTestApi</Filter>
+    </ClCompile>
+    <ClCompile Include="work\adc_ctrl.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TF_SimulinkAdc.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TF_SimulinkShared.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TL_SharedMemoryWrapper.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TF_BaseSource.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TF_SourceImit.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\parse_cmd.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\exceptinfo.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\adc_ctrl_data.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\main.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TF_SourceAdc.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

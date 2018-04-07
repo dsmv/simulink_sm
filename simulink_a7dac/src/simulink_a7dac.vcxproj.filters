@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="work">
+      <UniqueIdentifier>{2e381996-9e72-4209-9b84-7a049f5d9ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bardy">
+      <UniqueIdentifier>{ec620f52-7016-47f1-9be5-09b4670788b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin">
+      <UniqueIdentifier>{daf30e6c-451c-44d4-98e6-3942ab6be6d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConsoleTestApi">
+      <UniqueIdentifier>{3c997141-eb7d-4289-9273-291c835b48e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="work\stdafx.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_Test.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\brd.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\utypes.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_SimulinkShared.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TL_SharedMemoryWrapper.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\parse_cmd.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\global.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\exceptinfo.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_SimulinkA7Dac.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleTestApi\ConsoleTestApi.h">
+      <Filter>ConsoleTestApi</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleTestApi\TableApi.h">
+      <Filter>ConsoleTestApi</Filter>
+    </ClInclude>
+    <ClInclude Include="work\tf_a7dac.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\tf_dac.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\tf_dactop.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\tf_dds.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\tf_globalparam.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\tf_pll.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\cl_reg.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\ftd2xx.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_A7DacCtrl.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="work\TF_BaseSource.h">
+      <Filter>work</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\brderr.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="bardy\utypes_linux.h">
+      <Filter>bardy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="work\stdafx.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TF_SimulinkShared.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TL_SharedMemoryWrapper.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\parse_cmd.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\exceptinfo.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TF_SimulinkA7Dac.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleTestApi\ConsoleTestApi.cpp">
+      <Filter>ConsoleTestApi</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleTestApi\TableApi.cpp">
+      <Filter>ConsoleTestApi</Filter>
+    </ClCompile>
+    <ClCompile Include="work\tf_a7dac.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\tf_dds.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\tf_pll.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\TF_A7DacCtrl.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+    <ClCompile Include="work\main.cpp">
+      <Filter>work</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

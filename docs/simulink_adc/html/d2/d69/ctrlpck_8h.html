@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SIMULINK_ADC: Файл E:/_github/simulink_sm/simulink_adc/src/bardy/ctrlpck.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SIMULINK_ADC
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Приём данных от АЦП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','Поиск');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_9cc6fcdd0606c05e12b8eb4ba0303406.html">bardy</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл ctrlpck.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../dc/d5f/_ctrl_8h_source.html">ctrl.h</a>&quot;</code><br />
+</div>
+<p><a href="../../d2/d69/ctrlpck_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d83/struct_b_r_dctrl___packet_i_o.html">BRDctrl_PacketIO</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a876e4297877ded6bb5e4d63844a9f632"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d69/ctrlpck_8h.html#a876e4297877ded6bb5e4d63844a9f632">BRDctrl_PCK</a>&#160;&#160;&#160;40</td></tr>
+<tr class="separator:a876e4297877ded6bb5e4d63844a9f632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a2970898e8a43ce21e1cc510d49f1b89d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../d2/d69/ctrlpck_8h.html#a2970898e8a43ce21e1cc510d49f1b89dacda8ee5b112abced52f1c5ca910a104a">BRDctrl_PCK_ENABLE</a> = BRDctrl_PCK + 0, 
+<a class="el" href="../../d2/d69/ctrlpck_8h.html#a2970898e8a43ce21e1cc510d49f1b89da842b88a38f60b871e903229baa5af12f">BRDctrl_PCK_DISABLE</a> = BRDctrl_PCK + 1, 
+<a class="el" href="../../d2/d69/ctrlpck_8h.html#a2970898e8a43ce21e1cc510d49f1b89daba2fda10bb326ed0e84448b22d773dd7">BRDctrl_PCK_READ</a> = BRDctrl_PCK + 2, 
+<a class="el" href="../../d2/d69/ctrlpck_8h.html#a2970898e8a43ce21e1cc510d49f1b89da50d0a4c612febf818f19ff44c501adf2">BRDctrl_PCK_WRITE</a> = BRDctrl_PCK + 3, 
+<br />
+&#160;&#160;<a class="el" href="../../d2/d69/ctrlpck_8h.html#a2970898e8a43ce21e1cc510d49f1b89da14ae20568ccf1f01ee7563910012390a">BRDctrl_PCK_CHECK</a> = BRDctrl_PCK + 4, 
+<a class="el" href="../../d2/d69/ctrlpck_8h.html#a2970898e8a43ce21e1cc510d49f1b89da4f12c27b443e3528404bd1d9ab5a7fec">BRDctrl_PCK_ILLEGAL</a>
+<br />
+ }</td></tr>
+<tr class="separator:a2970898e8a43ce21e1cc510d49f1b89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a876e4297877ded6bb5e4d63844a9f632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876e4297877ded6bb5e4d63844a9f632">&#9670;&nbsp;</a></span>BRDctrl_PCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDctrl_PCK&#160;&#160;&#160;40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../d2/d69/ctrlpck_8h_source.html">ctrlpck.h</a> строка <a class="el" href="../../d2/d69/ctrlpck_8h_source.html#l00026">26</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a2970898e8a43ce21e1cc510d49f1b89d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2970898e8a43ce21e1cc510d49f1b89d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a2970898e8a43ce21e1cc510d49f1b89dacda8ee5b112abced52f1c5ca910a104a"></a>BRDctrl_PCK_ENABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2970898e8a43ce21e1cc510d49f1b89da842b88a38f60b871e903229baa5af12f"></a>BRDctrl_PCK_DISABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2970898e8a43ce21e1cc510d49f1b89daba2fda10bb326ed0e84448b22d773dd7"></a>BRDctrl_PCK_READ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2970898e8a43ce21e1cc510d49f1b89da50d0a4c612febf818f19ff44c501adf2"></a>BRDctrl_PCK_WRITE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2970898e8a43ce21e1cc510d49f1b89da14ae20568ccf1f01ee7563910012390a"></a>BRDctrl_PCK_CHECK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2970898e8a43ce21e1cc510d49f1b89da4f12c27b443e3528404bd1d9ab5a7fec"></a>BRDctrl_PCK_ILLEGAL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d2/d69/ctrlpck_8h_source.html">ctrlpck.h</a> строка <a class="el" href="../../d2/d69/ctrlpck_8h_source.html#l00028">28</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

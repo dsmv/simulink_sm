@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['servcmd_5fsys_5fcapture',['SERVcmd_SYS_CAPTURE',['../da/d24/brdapi_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea3c04598400b7b02e5972f1f03bb492db',1,'brdapi.h']]],
+  ['servcmd_5fsys_5fgetaddrdata',['SERVcmd_SYS_GETADDRDATA',['../da/d24/brdapi_8h.html#a05589fbab0657f08285ebdfe93f5ec9ea780017e34af47621c46a480e39f49a34',1,'brdapi.h']]],
+  ['servcmd_5fsys_5fisavailable',['SERVcmd_SYS_ISAVAILABLE',['../da/d24/brdapi_8h.html#a05589fbab0657f08285ebdfe93f5ec9eabae3fb4788526040f279121f43f68e82',1,'brdapi.h']]],
+  ['servcmd_5fsys_5frelease',['SERVcmd_SYS_RELEASE',['../da/d24/brdapi_8h.html#a05589fbab0657f08285ebdfe93f5ec9eafaf70403fa1a24cc587c949d70b0b5b0',1,'brdapi.h']]],
+  ['sidecmd_5fcapture',['SIDEcmd_CAPTURE',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a806d3939211071780c36f9f714be0df5',1,'brdapi.h']]],
+  ['sidecmd_5fcleanup',['SIDEcmd_CLEANUP',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a0aa808998fb45f81ebb2f790e42f8c68',1,'brdapi.h']]],
+  ['sidecmd_5fclose',['SIDEcmd_CLOSE',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ab237c641892dc4bb529b2e1173230b3b',1,'brdapi.h']]],
+  ['sidecmd_5fctrl',['SIDEcmd_CTRL',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a9d855ad9832e97d6f1aed698b6b5cbc5',1,'brdapi.h']]],
+  ['sidecmd_5fgetinfo',['SIDEcmd_GETINFO',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a64b7b6218233faba1353892913fe8b73',1,'brdapi.h']]],
+  ['sidecmd_5fgetservlist',['SIDEcmd_GETSERVLIST',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ab6460b0c5e9ee5d581dea0442aff72d7',1,'brdapi.h']]],
+  ['sidecmd_5fhardwarecleanup',['SIDEcmd_HARDWARECLEANUP',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a7aab84eb95aae0594813f3364ea91ee6',1,'brdapi.h']]],
+  ['sidecmd_5fhardwareinit',['SIDEcmd_HARDWAREINIT',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a30416b69305441299d050ecb4512d566',1,'brdapi.h']]],
+  ['sidecmd_5finit',['SIDEcmd_INIT',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ad24f0c347598b6dcd8b988319eb76fb4',1,'brdapi.h']]],
+  ['sidecmd_5fmax',['SIDEcmd_MAX',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8aa2f2ed048dbe0045115f2cb1cea07ef9',1,'brdapi.h']]],
+  ['sidecmd_5fopen',['SIDEcmd_OPEN',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8acec00074b62a74300ad08dbb925d7998',1,'brdapi.h']]],
+  ['sidecmd_5fpulist',['SIDEcmd_PULIST',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8aa2c3f5c289a4d60ced5c79d37796971c',1,'brdapi.h']]],
+  ['sidecmd_5fpuload',['SIDEcmd_PULOAD',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a0cdd99c5554cff643e67db929756c6b4',1,'brdapi.h']]],
+  ['sidecmd_5fpuread',['SIDEcmd_PUREAD',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ab101936cf910c7a81a80a73d169df685',1,'brdapi.h']]],
+  ['sidecmd_5fpustate',['SIDEcmd_PUSTATE',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a288ab8e13b1e8b97a7767fe8df03f1a7',1,'brdapi.h']]],
+  ['sidecmd_5fpuwrite',['SIDEcmd_PUWRITE',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a45714906fe29dfe3d86e1496330916e2',1,'brdapi.h']]],
+  ['sidecmd_5frelease',['SIDEcmd_RELEASE',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a886dc27ebdf0ed7919f87e3fa2e2b9d6',1,'brdapi.h']]],
+  ['sidecmd_5fservcmdquery',['SIDEcmd_SERVCMDQUERY',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a0af869757635d10f273d2f2792c483e0',1,'brdapi.h']]],
+  ['sidecmd_5fsetservlist',['SIDEcmd_SETSERVLIST',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a6b904be0e0cba606227a0445faf76fb4',1,'brdapi.h']]],
+  ['sidecmd_5fversion',['SIDEcmd_VERSION',['../da/d24/brdapi_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8a07ece1c84910f29f05d40ce5ea38a77b',1,'brdapi.h']]]
+];

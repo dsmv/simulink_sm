@@ -1,0 +1,834 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SIMULINK_ADC: Файл E:/_github/simulink_sm/simulink_adc/src/bardy/sockipc.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SIMULINK_ADC
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Приём данных от АЦП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','Поиск');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_9cc6fcdd0606c05e12b8eb4ba0303406.html">bardy</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл sockipc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../df/d1b/ipclib_8h_source.html">ipclib.h</a>&quot;</code><br />
+<code>#include &lt;Winsock.h&gt;</code><br />
+</div>
+<p><a href="../../dc/d0f/sockipc_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ab99ef48c54d70d4ce1dc8021a8bea9ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#ab99ef48c54d70d4ce1dc8021a8bea9ee">IPC_SD_RECEIVE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ab99ef48c54d70d4ce1dc8021a8bea9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609917a168a528ce5a770148a844c274"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a609917a168a528ce5a770148a844c274">IPC_SD_SEND</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a609917a168a528ce5a770148a844c274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33582617c754e832c30f1c78361aaf92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a33582617c754e832c30f1c78361aaf92">IPC_SD_BOTH</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a33582617c754e832c30f1c78361aaf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a13714f3af6886f6fa7495448be20feae"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a13714f3af6886f6fa7495448be20feae">IPC_proto</a> { <a class="el" href="../../dc/d0f/sockipc_8h.html#a13714f3af6886f6fa7495448be20feaea377ba860209cbb5fa6dfd435b0b5aafe">IPC_udp</a>, 
+<a class="el" href="../../dc/d0f/sockipc_8h.html#a13714f3af6886f6fa7495448be20feaea5a649cf650f94afac7d227139f2ecb99">IPC_tcp</a>
+ }</td></tr>
+<tr class="separator:a13714f3af6886f6fa7495448be20feae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aa0527c1ef2d3fca780a8873ec8a99fb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#aa0527c1ef2d3fca780a8873ec8a99fb5">IPC_initSocket</a> ()</td></tr>
+<tr class="separator:aa0527c1ef2d3fca780a8873ec8a99fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b05e992def9cf674939c3dd5bccf97d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a5b05e992def9cf674939c3dd5bccf97d">IPC_cleanupSocket</a> ()</td></tr>
+<tr class="separator:a5b05e992def9cf674939c3dd5bccf97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed297ed2ca9119defa3ac7671709079a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#aed297ed2ca9119defa3ac7671709079a">IPC_resolve</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *addr)</td></tr>
+<tr class="separator:aed297ed2ca9119defa3ac7671709079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a80ce95363d42a74eab25dab44721b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#ad4a80ce95363d42a74eab25dab44721b">IPC_openSocket</a> (<a class="el" href="../../dc/d0f/sockipc_8h.html#a13714f3af6886f6fa7495448be20feae">IPC_proto</a> proto)</td></tr>
+<tr class="separator:ad4a80ce95363d42a74eab25dab44721b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8dbd8b4628be7384f1f1d76cf95f91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#aab8dbd8b4628be7384f1f1d76cf95f91">IPC_listen</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, int backlog)</td></tr>
+<tr class="separator:aab8dbd8b4628be7384f1f1d76cf95f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa845e47a3550fbd291a4d49bb6ea7a7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#aa845e47a3550fbd291a4d49bb6ea7a7a">IPC_accept</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, <a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *ip, int timeout)</td></tr>
+<tr class="separator:aa845e47a3550fbd291a4d49bb6ea7a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736f60a6763c2579a3be4e2e3ed345fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a736f60a6763c2579a3be4e2e3ed345fe">IPC_connect</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, <a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *ip)</td></tr>
+<tr class="separator:a736f60a6763c2579a3be4e2e3ed345fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2615294ff3c3391813a99d80736a34e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#ad2615294ff3c3391813a99d80736a34e">IPC_bind</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, <a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *ip)</td></tr>
+<tr class="separator:ad2615294ff3c3391813a99d80736a34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f4a3402c8063751ab1db4ee38a84d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#ab8f4a3402c8063751ab1db4ee38a84d1">IPC_select</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, fd_set *readfds, fd_set *writefds, fd_set *exceptfds, const struct timeval *timeout)</td></tr>
+<tr class="separator:ab8f4a3402c8063751ab1db4ee38a84d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d0001a619ce03d05bf962980da628b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a98d0001a619ce03d05bf962980da628b">IPC_send</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, char *data, int size, int timeout)</td></tr>
+<tr class="separator:a98d0001a619ce03d05bf962980da628b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e271eddcebed7a91e986214944ed0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#af2e271eddcebed7a91e986214944ed0a">IPC_recv</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, char *data, int size, int timeout)</td></tr>
+<tr class="separator:af2e271eddcebed7a91e986214944ed0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa91d80ef943c09dfafa5d4598d3277"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#aaaa91d80ef943c09dfafa5d4598d3277">IPC_sendTo</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, char *data, int size, int flags, <a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *ip)</td></tr>
+<tr class="separator:aaaa91d80ef943c09dfafa5d4598d3277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9838ebf6c02546fdaf5dd81423a678a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#ae9838ebf6c02546fdaf5dd81423a678a">IPC_recvFrom</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, char *data, int size, int flags, <a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *ip)</td></tr>
+<tr class="separator:ae9838ebf6c02546fdaf5dd81423a678a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3905d1eb733d83ced21034539acf4f5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a3905d1eb733d83ced21034539acf4f5e">IPC_closeSocket</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s)</td></tr>
+<tr class="separator:a3905d1eb733d83ced21034539acf4f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f68393b0a70b3b5072ef9bb685dce6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a07f68393b0a70b3b5072ef9bb685dce6">IPC_FD_ZERO</a> (fd_set *set)</td></tr>
+<tr class="separator:a07f68393b0a70b3b5072ef9bb685dce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d99cee377f6ba8f01d03dd23c36605"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a46d99cee377f6ba8f01d03dd23c36605">IPC_FD_SET</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, fd_set *set)</td></tr>
+<tr class="separator:a46d99cee377f6ba8f01d03dd23c36605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4355b2ff1436f7991cfc0a9208d8c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a8c4355b2ff1436f7991cfc0a9208d8c3">IPC_FD_CLR</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, fd_set *set)</td></tr>
+<tr class="separator:a8c4355b2ff1436f7991cfc0a9208d8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d6e3a65a0c282e842fb33719bbd392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#ad5d6e3a65a0c282e842fb33719bbd392">IPC_shutdown</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, int how)</td></tr>
+<tr class="separator:ad5d6e3a65a0c282e842fb33719bbd392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908e652032ed37e2b76d677be18712de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a908e652032ed37e2b76d677be18712de">IPC_setsockopt</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> s, int level, int optname, const char *optval, int optlen)</td></tr>
+<tr class="separator:a908e652032ed37e2b76d677be18712de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56688741b6480be8b8ffee8dd27980ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a56688741b6480be8b8ffee8dd27980ea">IPC_ntohl</a> (unsigned int netlong)</td></tr>
+<tr class="separator:a56688741b6480be8b8ffee8dd27980ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59a305a23d96d5027dfbe7ee88f1f9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#ab59a305a23d96d5027dfbe7ee88f1f9b">IPC_htonl</a> (unsigned int hostlong)</td></tr>
+<tr class="separator:ab59a305a23d96d5027dfbe7ee88f1f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f721ce6dfba25bfa6c6d4b19f39b425"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0f/sockipc_8h.html#a8f721ce6dfba25bfa6c6d4b19f39b425">IPC_inet_ntoa</a> (unsigned long addr)</td></tr>
+<tr class="separator:a8f721ce6dfba25bfa6c6d4b19f39b425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a33582617c754e832c30f1c78361aaf92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33582617c754e832c30f1c78361aaf92">&#9670;&nbsp;</a></span>IPC_SD_BOTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPC_SD_BOTH&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../dc/d0f/sockipc_8h_source.html">sockipc.h</a> строка <a class="el" href="../../dc/d0f/sockipc_8h_source.html#l00035">35</a></p>
+
+</div>
+</div>
+<a id="ab99ef48c54d70d4ce1dc8021a8bea9ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99ef48c54d70d4ce1dc8021a8bea9ee">&#9670;&nbsp;</a></span>IPC_SD_RECEIVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPC_SD_RECEIVE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../dc/d0f/sockipc_8h_source.html">sockipc.h</a> строка <a class="el" href="../../dc/d0f/sockipc_8h_source.html#l00033">33</a></p>
+
+</div>
+</div>
+<a id="a609917a168a528ce5a770148a844c274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609917a168a528ce5a770148a844c274">&#9670;&nbsp;</a></span>IPC_SD_SEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPC_SD_SEND&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../dc/d0f/sockipc_8h_source.html">sockipc.h</a> строка <a class="el" href="../../dc/d0f/sockipc_8h_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a13714f3af6886f6fa7495448be20feae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13714f3af6886f6fa7495448be20feae">&#9670;&nbsp;</a></span>IPC_proto</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../dc/d0f/sockipc_8h.html#a13714f3af6886f6fa7495448be20feae">IPC_proto</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a13714f3af6886f6fa7495448be20feaea377ba860209cbb5fa6dfd435b0b5aafe"></a>IPC_udp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13714f3af6886f6fa7495448be20feaea5a649cf650f94afac7d227139f2ecb99"></a>IPC_tcp&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../dc/d0f/sockipc_8h_source.html">sockipc.h</a> строка <a class="el" href="../../dc/d0f/sockipc_8h_source.html#l00054">54</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="aa845e47a3550fbd291a4d49bb6ea7a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa845e47a3550fbd291a4d49bb6ea7a7a">&#9670;&nbsp;</a></span>IPC_accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> IPC_accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2615294ff3c3391813a99d80736a34e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2615294ff3c3391813a99d80736a34e">&#9670;&nbsp;</a></span>IPC_bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_bind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b05e992def9cf674939c3dd5bccf97d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b05e992def9cf674939c3dd5bccf97d">&#9670;&nbsp;</a></span>IPC_cleanupSocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_cleanupSocket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3905d1eb733d83ced21034539acf4f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3905d1eb733d83ced21034539acf4f5e">&#9670;&nbsp;</a></span>IPC_closeSocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_closeSocket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a736f60a6763c2579a3be4e2e3ed345fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a736f60a6763c2579a3be4e2e3ed345fe">&#9670;&nbsp;</a></span>IPC_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_connect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c4355b2ff1436f7991cfc0a9208d8c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4355b2ff1436f7991cfc0a9208d8c3">&#9670;&nbsp;</a></span>IPC_FD_CLR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> void IPC_FD_CLR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fd_set *&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46d99cee377f6ba8f01d03dd23c36605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d99cee377f6ba8f01d03dd23c36605">&#9670;&nbsp;</a></span>IPC_FD_SET()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> void IPC_FD_SET </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fd_set *&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07f68393b0a70b3b5072ef9bb685dce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f68393b0a70b3b5072ef9bb685dce6">&#9670;&nbsp;</a></span>IPC_FD_ZERO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> void IPC_FD_ZERO </td>
+          <td>(</td>
+          <td class="paramtype">fd_set *&#160;</td>
+          <td class="paramname"><em>set</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab59a305a23d96d5027dfbe7ee88f1f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59a305a23d96d5027dfbe7ee88f1f9b">&#9670;&nbsp;</a></span>IPC_htonl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> unsigned int IPC_htonl </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>hostlong</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f721ce6dfba25bfa6c6d4b19f39b425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f721ce6dfba25bfa6c6d4b19f39b425">&#9670;&nbsp;</a></span>IPC_inet_ntoa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> char* IPC_inet_ntoa </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0527c1ef2d3fca780a8873ec8a99fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0527c1ef2d3fca780a8873ec8a99fb5">&#9670;&nbsp;</a></span>IPC_initSocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_initSocket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab8dbd8b4628be7384f1f1d76cf95f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab8dbd8b4628be7384f1f1d76cf95f91">&#9670;&nbsp;</a></span>IPC_listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_listen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>backlog</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56688741b6480be8b8ffee8dd27980ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56688741b6480be8b8ffee8dd27980ea">&#9670;&nbsp;</a></span>IPC_ntohl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> unsigned int IPC_ntohl </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>netlong</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4a80ce95363d42a74eab25dab44721b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a80ce95363d42a74eab25dab44721b">&#9670;&nbsp;</a></span>IPC_openSocket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> IPC_openSocket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d0f/sockipc_8h.html#a13714f3af6886f6fa7495448be20feae">IPC_proto</a>&#160;</td>
+          <td class="paramname"><em>proto</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2e271eddcebed7a91e986214944ed0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e271eddcebed7a91e986214944ed0a">&#9670;&nbsp;</a></span>IPC_recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_recv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9838ebf6c02546fdaf5dd81423a678a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9838ebf6c02546fdaf5dd81423a678a">&#9670;&nbsp;</a></span>IPC_recvFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_recvFrom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed297ed2ca9119defa3ac7671709079a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed297ed2ca9119defa3ac7671709079a">&#9670;&nbsp;</a></span>IPC_resolve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> IPC_resolve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *&#160;</td>
+          <td class="paramname"><em>addr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8f4a3402c8063751ab1db4ee38a84d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f4a3402c8063751ab1db4ee38a84d1">&#9670;&nbsp;</a></span>IPC_select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_select </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fd_set *&#160;</td>
+          <td class="paramname"><em>readfds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fd_set *&#160;</td>
+          <td class="paramname"><em>writefds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fd_set *&#160;</td>
+          <td class="paramname"><em>exceptfds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct timeval *&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98d0001a619ce03d05bf962980da628b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d0001a619ce03d05bf962980da628b">&#9670;&nbsp;</a></span>IPC_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaaa91d80ef943c09dfafa5d4598d3277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa91d80ef943c09dfafa5d4598d3277">&#9670;&nbsp;</a></span>IPC_sendTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_sendTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d33/struct_i_p_c__sockaddr.html">IPC_sockaddr</a> *&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a908e652032ed37e2b76d677be18712de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908e652032ed37e2b76d677be18712de">&#9670;&nbsp;</a></span>IPC_setsockopt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_setsockopt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>optname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>optval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>optlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5d6e3a65a0c282e842fb33719bbd392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d6e3a65a0c282e842fb33719bbd392">&#9670;&nbsp;</a></span>IPC_shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_shutdown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>how</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

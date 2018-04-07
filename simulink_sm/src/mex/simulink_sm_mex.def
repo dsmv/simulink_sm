@@ -1,0 +1,2 @@
+﻿LIBRARY bardy_adc.mexw64
+EXPORTS mexFunction

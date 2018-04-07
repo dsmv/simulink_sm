@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="low">
+      <UniqueIdentifier>{c9170486-7741-43ae-9233-fb29829a63a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mex">
+      <UniqueIdentifier>{bde5c244-947e-47d4-96bb-421930c79b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{957bb8dc-c0af-473c-8e1b-c762bb8f186a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="low\bardy">
+      <UniqueIdentifier>{8b7757ad-4d05-424d-8708-79986448826d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="low\bardy\ctrladmpro">
+      <UniqueIdentifier>{249e8844-3666-4553-81d8-9a965393d3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="low\device">
+      <UniqueIdentifier>{96244b75-fbb6-4b62-b82d-633a9298efde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="easyLink-3.3.0">
+      <UniqueIdentifier>{e9d36e35-4e39-4270-b479-bc2b21b33d65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="easyLink-3.3.0\include">
+      <UniqueIdentifier>{2cb05e2a-776f-493e-9cb1-4f05fed49e44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="low\bardy\ctrladmpro\ctrladc.h">
+      <Filter>low\bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\ctrladmpro\ctrladmpro.h">
+      <Filter>low\bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\ctrladmpro\ctrlcmpsc.h">
+      <Filter>low\bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\ctrladmpro\ctrlreg.h">
+      <Filter>low\bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\ctrladmpro\ctrlsdram.h">
+      <Filter>low\bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\ctrladmpro\mu_ctrl.h">
+      <Filter>low\bardy\ctrladmpro</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\brd.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\brdapi.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\brderr.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\brdfunx.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\brdpu.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\brdserv.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\brdstrm.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\Ctrl.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\ctrlstrm.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\CtrlSvm.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\extn.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\extn_andor.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\icr.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\pcidef.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\printf_oem.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\realdelay.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="low\bardy\utypes.h">
+      <Filter>low\bardy</Filter>
+    </ClInclude>
+    <ClInclude Include="easyLink-3.3.0\include\array.h">
+      <Filter>easyLink-3.3.0\include</Filter>
+    </ClInclude>
+    <ClInclude Include="easyLink-3.3.0\include\baseblock.h">
+      <Filter>easyLink-3.3.0\include</Filter>
+    </ClInclude>
+    <ClInclude Include="easyLink-3.3.0\include\basefunction.h">
+      <Filter>easyLink-3.3.0\include</Filter>
+    </ClInclude>
+    <ClInclude Include="easyLink-3.3.0\include\easylink.h">
+      <Filter>easyLink-3.3.0\include</Filter>
+    </ClInclude>
+    <ClInclude Include="easyLink-3.3.0\include\matlabarray.h">
+      <Filter>easyLink-3.3.0\include</Filter>
+    </ClInclude>
+    <ClInclude Include="easyLink-3.3.0\include\mdldefinitions.h">
+      <Filter>easyLink-3.3.0\include</Filter>
+    </ClInclude>
+    <ClInclude Include="easyLink-3.3.0\include\mexdefinitions.h">
+      <Filter>easyLink-3.3.0\include</Filter>
+    </ClInclude>
+    <ClInclude Include="easyLink-3.3.0\include\utils.h">
+      <Filter>easyLink-3.3.0\include</Filter>
+    </ClInclude>
+    <ClInclude Include="low\device\TL_SharedMemoryWrapper.h">
+      <Filter>low\device</Filter>
+    </ClInclude>
+    <ClInclude Include="low\device\TF_SimulinkShared.h">
+      <Filter>low\device</Filter>
+    </ClInclude>
+    <ClInclude Include="mex\sm_ctrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="low\device\TL_SharedMemoryWrapper.cpp">
+      <Filter>low\device</Filter>
+    </ClCompile>
+    <ClCompile Include="low\device\TF_SimulinkShared.cpp">
+      <Filter>low\device</Filter>
+    </ClCompile>
+    <ClCompile Include="mex\sm_ctrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mex\bardy_adc_mex.def">
+      <Filter>mex</Filter>
+    </None>
+  </ItemGroup>
+</Project>

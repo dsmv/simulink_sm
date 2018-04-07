@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SIMULINK_ADC: Файл E:/_github/simulink_sm/simulink_adc/src/bardy/ctrladmpro/ctrlgc5016.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SIMULINK_ADC
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Приём данных от АЦП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','Поиск');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_9cc6fcdd0606c05e12b8eb4ba0303406.html">bardy</a></li><li class="navelem"><a class="el" href="../../dir_f129615e9e775b15ede6a3207139f53d.html">ctrladmpro</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл ctrlgc5016.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d8/df5/ctrladmpro_8h_source.html">ctrladmpro.h</a>&quot;</code><br />
+</div>
+<p><a href="../../d6/d0e/ctrlgc5016_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d38/struct___b_r_d___g_c5016_set_reg.html">_BRD_GC5016SetReg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5d/struct___b_r_d___g_c5016_set_sync.html">_BRD_GC5016SetSync</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dbc/struct___b_r_d___g_c5016_adc_set_gain.html">_BRD_GC5016AdcSetGain</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/struct___b_r_d___g_c5016_set_fc.html">_BRD_GC5016SetFc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dcd/struct___b_r_d___g_c5016_program.html">_BRD_GC5016Program</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/struct___b_r_d___g_c5016_program_ext.html">_BRD_GC5016ProgramExt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d19/struct___b_r_d___g_c5016_spec.html">_BRD_GC5016Spec</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d98/struct___b_r_d___set_flt.html">_BRD_SetFlt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d3c/struct___b_r_d___set_fft.html">_BRD_SetFft</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d73/struct___b_r_d___set_frame.html">_BRD_SetFrame</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d80/struct___b_r_d___g_c5016_cfg.html">_BRD_GC5016Cfg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ad5e8679b45b2f28ce6b875508ccaea9d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/d38/struct___b_r_d___g_c5016_set_reg.html">_BRD_GC5016SetReg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ad5e8679b45b2f28ce6b875508ccaea9d">BRD_GC5016SetReg</a></td></tr>
+<tr class="separator:ad5e8679b45b2f28ce6b875508ccaea9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fba4394726e62fa3b52d8d5b58ce400"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/d38/struct___b_r_d___g_c5016_set_reg.html">_BRD_GC5016SetReg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a5fba4394726e62fa3b52d8d5b58ce400">PBRD_GC5016SetReg</a></td></tr>
+<tr class="separator:a5fba4394726e62fa3b52d8d5b58ce400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f59916ded7e388eb558f62242cbff60"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../df/d5d/struct___b_r_d___g_c5016_set_sync.html">_BRD_GC5016SetSync</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a0f59916ded7e388eb558f62242cbff60">BRD_GC5016SetSync</a></td></tr>
+<tr class="separator:a0f59916ded7e388eb558f62242cbff60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9c95a2efdc66b3854da277c9b45c42"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../df/d5d/struct___b_r_d___g_c5016_set_sync.html">_BRD_GC5016SetSync</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aaf9c95a2efdc66b3854da277c9b45c42">PBRD_GC5016SetSync</a></td></tr>
+<tr class="separator:aaf9c95a2efdc66b3854da277c9b45c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06165d2d2cb5cd2ed62811ab6119d2b5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/dbc/struct___b_r_d___g_c5016_adc_set_gain.html">_BRD_GC5016AdcSetGain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a06165d2d2cb5cd2ed62811ab6119d2b5">BRD_GC5016AdcSetGain</a></td></tr>
+<tr class="separator:a06165d2d2cb5cd2ed62811ab6119d2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa102f9198626565ffe7c0b2e028d2d7c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/dbc/struct___b_r_d___g_c5016_adc_set_gain.html">_BRD_GC5016AdcSetGain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aa102f9198626565ffe7c0b2e028d2d7c">PBRD_GC5016AdcSetGain</a></td></tr>
+<tr class="separator:aa102f9198626565ffe7c0b2e028d2d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14d7516e47906665ebdaa309c4be11c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../da/dbf/struct___b_r_d___g_c5016_set_fc.html">_BRD_GC5016SetFc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ae14d7516e47906665ebdaa309c4be11c">BRD_GC5016SetFc</a></td></tr>
+<tr class="separator:ae14d7516e47906665ebdaa309c4be11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc52059cbbe30ad4dce575d1f98f96e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../da/dbf/struct___b_r_d___g_c5016_set_fc.html">_BRD_GC5016SetFc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aefc52059cbbe30ad4dce575d1f98f96e">PBRD_GC5016SetFc</a></td></tr>
+<tr class="separator:aefc52059cbbe30ad4dce575d1f98f96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fb54485dea6ea97b589d84a221cd41"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d9/dcd/struct___b_r_d___g_c5016_program.html">_BRD_GC5016Program</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ab3fb54485dea6ea97b589d84a221cd41">BRD_GC5016Program</a></td></tr>
+<tr class="separator:ab3fb54485dea6ea97b589d84a221cd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98117eb39330169040bf42b62016068"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d9/dcd/struct___b_r_d___g_c5016_program.html">_BRD_GC5016Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ae98117eb39330169040bf42b62016068">PBRD_GC5016Program</a></td></tr>
+<tr class="separator:ae98117eb39330169040bf42b62016068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415dbf534d7b4ccf6c80f241c499e7e3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d5/d40/struct___b_r_d___g_c5016_program_ext.html">_BRD_GC5016ProgramExt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a415dbf534d7b4ccf6c80f241c499e7e3">BRD_GC5016ProgramExt</a></td></tr>
+<tr class="separator:a415dbf534d7b4ccf6c80f241c499e7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af18294281e0ead775bd38a7069c94de3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d5/d40/struct___b_r_d___g_c5016_program_ext.html">_BRD_GC5016ProgramExt</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#af18294281e0ead775bd38a7069c94de3">PBRD_GC5016ProgramExt</a></td></tr>
+<tr class="separator:af18294281e0ead775bd38a7069c94de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7c46f9a79cc8c72f663b1d788dfb6d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d6/d19/struct___b_r_d___g_c5016_spec.html">_BRD_GC5016Spec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a5a7c46f9a79cc8c72f663b1d788dfb6d">BRD_GC5016Spec</a></td></tr>
+<tr class="separator:a5a7c46f9a79cc8c72f663b1d788dfb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b1a8969196b4520bde17e6b8b264dc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d6/d19/struct___b_r_d___g_c5016_spec.html">_BRD_GC5016Spec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ab6b1a8969196b4520bde17e6b8b264dc">PBRD_GC5016Spec</a></td></tr>
+<tr class="separator:ab6b1a8969196b4520bde17e6b8b264dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef2367d14d5f2de9fb645c21da5a4c0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/d98/struct___b_r_d___set_flt.html">_BRD_SetFlt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a1ef2367d14d5f2de9fb645c21da5a4c0">BRD_SetFlt</a></td></tr>
+<tr class="separator:a1ef2367d14d5f2de9fb645c21da5a4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f11794d039007653fb54668786e6b6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/d98/struct___b_r_d___set_flt.html">_BRD_SetFlt</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aa3f11794d039007653fb54668786e6b6">PBRD_SetFlt</a></td></tr>
+<tr class="separator:aa3f11794d039007653fb54668786e6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef23047188dc48e53ef4d1862a69fe03"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d5/d3c/struct___b_r_d___set_fft.html">_BRD_SetFft</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aef23047188dc48e53ef4d1862a69fe03">BRD_SetFft</a></td></tr>
+<tr class="separator:aef23047188dc48e53ef4d1862a69fe03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aba50466d1b7edb9a7fd64524e0021c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d5/d3c/struct___b_r_d___set_fft.html">_BRD_SetFft</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a8aba50466d1b7edb9a7fd64524e0021c">PBRD_SetFft</a></td></tr>
+<tr class="separator:a8aba50466d1b7edb9a7fd64524e0021c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435124653a60e49ff88dc68212299367"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d2/d73/struct___b_r_d___set_frame.html">_BRD_SetFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a435124653a60e49ff88dc68212299367">BRD_SetFrame</a></td></tr>
+<tr class="separator:a435124653a60e49ff88dc68212299367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e427c5324accc9fe600bbe344d740e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d2/d73/struct___b_r_d___set_frame.html">_BRD_SetFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a05e427c5324accc9fe600bbe344d740e">PBRD_SetFrame</a></td></tr>
+<tr class="separator:a05e427c5324accc9fe600bbe344d740e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cb30996e95931e53e21fc2bc36f5a1"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a409aa35ff15acaa31d13200a9c4e3c37">_GC5016_NUM_CMD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a91cb30996e95931e53e21fc2bc36f5a1">GC5016_NUM_CMD</a></td></tr>
+<tr class="separator:a91cb30996e95931e53e21fc2bc36f5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d525d8d69eca8b2ab85f85893fedeff"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../df/d80/struct___b_r_d___g_c5016_cfg.html">_BRD_GC5016Cfg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a8d525d8d69eca8b2ab85f85893fedeff">BRD_GC5016Cfg</a></td></tr>
+<tr class="separator:a8d525d8d69eca8b2ab85f85893fedeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9660dedbd9301f7ed175e0d6de0717"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../df/d80/struct___b_r_d___g_c5016_cfg.html">_BRD_GC5016Cfg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#abb9660dedbd9301f7ed175e0d6de0717">PBRD_GC5016Cfg</a></td></tr>
+<tr class="separator:abb9660dedbd9301f7ed175e0d6de0717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a4790f45dcc812c1b00184a2edccdddf5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a5e693776664b7c42346076fe6456cd34">BRDctrl_GC5016_SETMASTER</a> = BRDctrl_GC5016 + 0, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a82dfddf3e00e77c26ff5c97dbbf01129">BRDctrl_GC5016_GETMASTER</a> = BRDctrl_GC5016 + 1, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ae5766b7d1c16b23c92e599adb68c915c">BRDctrl_GC5016_SETCHANMASK</a> = BRDctrl_GC5016 + 2, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a91f7ec1a2f5e44822ba6f7244ad6a660">BRDctrl_GC5016_GETCHANMASK</a> = BRDctrl_GC5016 + 3, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a2bf8ea9e97983ed510814d118b048c2c">BRDctrl_GC5016_SETCLKMODE</a> = BRDctrl_GC5016 + 4, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ac6b52edcd6ba01ec4c7eff70cd412988">BRDctrl_GC5016_GETCLKMODE</a> = BRDctrl_GC5016 + 5, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a000b4a6d77e80e164d1c731c15f0f9d9">BRDctrl_GC5016_SETSTARTMODE</a> = BRDctrl_GC5016 + 6, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a12ccd34144045f1ba2db1334613c3e18">BRDctrl_GC5016_GETSTARTMODE</a> = BRDctrl_GC5016 + 7, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a133392f718b2994dbe75438bb867dab4">BRDctrl_GC5016_FIFORESET</a> = BRDctrl_GC5016 + 8, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a751950626cbff7041ff6620f058049d9">BRDctrl_GC5016_START</a> = BRDctrl_GC5016 + 9, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5aeff254c01e38ae0ec5e984bd0eea0ae0">BRDctrl_GC5016_STOP</a> = BRDctrl_GC5016 + 10, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5afd09e009318bea1b1958c7087ef46f86">BRDctrl_GC5016_FIFOSTATUS</a> = BRDctrl_GC5016 + 11, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a191e1ece1a39dbe42cce74e4f4f0c8d6">BRDctrl_GC5016_GETDATA</a> = BRDctrl_GC5016 + 12, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a9ba284a3a8c2d802e4827819d0f049a6">BRDctrl_GC5016_SETTARGET</a> = BRDctrl_GC5016 + 13, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a578b328230515d4c86eca544d34c37d0">BRDctrl_GC5016_GETTARGET</a> = BRDctrl_GC5016 + 14, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a5b06cb7e7b57817dbb7f0d9e3c38e0b6">BRDctrl_GC5016_GETSRCSTREAM</a> = BRDctrl_GC5016 + 15, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ad25521829637750072f84d800dca3a2a">BRDctrl_GC5016_GCSETREG</a> = BRDctrl_GC5016 + 16, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a0bbbbb8ecd8a68b3d856cf2ca5119103">BRDctrl_GC5016_GCGETREG</a> = BRDctrl_GC5016 + 17, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ae799106dc6e066b2603d2ab465565894">BRDctrl_GC5016_SETADCGAIN</a> = BRDctrl_GC5016 + 18, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a467e4f1f909cfe8e0aa480d7f498bdda">BRDctrl_GC5016_GETADCOVER</a> = BRDctrl_GC5016 + 19, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a19db4e1c3e0e56eb2c2d3ec32f53e0f7">BRDctrl_GC5016_ADCENABLE</a> = BRDctrl_GC5016 + 20, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a3647d8eb884841f7a3d1b697785a4af1">BRDctrl_GC5016_SETDDCFC</a> = BRDctrl_GC5016 + 21, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a58595503041053e53da25815f1603c87">BRDctrl_GC5016_SETADMMODE</a> = BRDctrl_GC5016 + 23, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5aecfe26d1eb5a194ebbc99f754281687c">BRDctrl_GC5016_SETDDCMODE</a> = BRDctrl_GC5016 + 24, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a72d6157973008b765d0345b240dff4ad">BRDctrl_GC5016_SETDDCSYNC</a> = BRDctrl_GC5016 + 25, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a2353fd197cfba99d15e8edc75b68f5cc">BRDctrl_GC5016_PROGRAMDDC</a> = BRDctrl_GC5016 + 26, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a5af145ddcdc3fdd3cf3c505933486ec2">BRDctrl_GC5016_STARTDDC</a> = BRDctrl_GC5016 + 27, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a9e969e5a0a323bd6e701780f3f60d643">BRDctrl_GC5016_STOPDDC</a> = BRDctrl_GC5016 + 28, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5abf2dc75762a1ca8628e09463513970e9">BRDctrl_GC5016_SETTESTMODE</a> = BRDctrl_GC5016 + 29, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a60c92db8ab9d7fd9640a066a3045b7a6">BRDctrl_GC5016_GETTESTMODE</a> = BRDctrl_GC5016 + 30, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ab4bcf2c28110f37227085eed9ef8be54">BRDctrl_GC5016_SETSTDELAY</a> = BRDctrl_GC5016 + 31, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ab7aa53050d8b9bca214bc25e08c655e2">BRDctrl_GC5016_GETSTDELAY</a> = BRDctrl_GC5016 + 32, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a7809d1b05b58357a560d3e523b861255">BRDctrl_GC5016_SETACQDATA</a> = BRDctrl_GC5016 + 33, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5aae18df04beede0a322b203d69295b131">BRDctrl_GC5016_GETACQDATA</a> = BRDctrl_GC5016 + 34, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5add14806c3632346b198a94e9dbd35361">BRDctrl_GC5016_SETSKIPDATA</a> = BRDctrl_GC5016 + 35, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a60cb4053e8b5b00dd1b28674c653f33b">BRDctrl_GC5016_GETSKIPDATA</a> = BRDctrl_GC5016 + 36, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a83dcf9d65b3f55e18bc8bc8caaef62bd">BRDctrl_GC5016_SETTITLEMODE</a> = BRDctrl_GC5016 + 37, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a8f55461092cc9943f1c3c70e9a77a945">BRDctrl_GC5016_GETTITLEMODE</a> = BRDctrl_GC5016 + 38, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ac6d4ccb330605e3918ab783b836d5e99">BRDctrl_GC5016_SETTITLEDATA</a> = BRDctrl_GC5016 + 39, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ab019408e125b40ea9862592ae9a311a3">BRDctrl_GC5016_GETTITLEDATA</a> = BRDctrl_GC5016 + 40, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a7a35ce7e0dda87694d8de519cd420b8a">BRDctrl_GC5016_SETSPECIFIC</a> = BRDctrl_GC5016 + 41, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ad32a928c59c07348d39c03b764ce9988">BRDctrl_GC5016_GETSPECIFIC</a> = BRDctrl_GC5016 + 42, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ad023f101db5d7ef29884a7f7cfa1a890">BRDctrl_GC5016_GETCFG</a> = BRDctrl_GC5016 + 43, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a467b64b61b16364845e4cd49c0e93185">BRDctrl_GC5016_PROGRAMDDCEXT</a> = BRDctrl_GC5016 + 44, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a9e06e68094616182bb3654afce0d35fb">BRDctrl_GC5016_STARTDDCEXT</a> = BRDctrl_GC5016 + 45, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a26fcf7d9142261ba366236704acc4325">BRDctrl_GC5016_STOPDDCEXT</a> = BRDctrl_GC5016 + 46, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ace5878ea459a7bf7ff26485ad9353a1e">BRDctrl_GC5016_SETDDCFCEXT</a> = BRDctrl_GC5016 + 47, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a2b22dad517b6aa73b3ffafc9ef7b712e">BRDctrl_GC5016_SETFLT</a> = BRDctrl_GC5016 + 48, 
+<br />
+&#160;&#160;<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ac491c16191eca717fdf7d12ecb46cc12">BRDctrl_GC5016_SETFFT</a> = BRDctrl_GC5016 + 49, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5a215c2e31af64f1eb08155df50a79cc93">BRDctrl_GC5016_SETFRAME</a> = BRDctrl_GC5016 + 50, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ae0967e59a2368c9c6c745a585f74fd58">BRDctrl_GC5016_SETNCHANS</a> = BRDctrl_GC5016 + 51, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a4790f45dcc812c1b00184a2edccdddf5ab1b78fd4df29696495caf3db6bd656c6">BRDctrl_GC5016_ILLEGAL</a>
+<br />
+ }</td></tr>
+<tr class="separator:a4790f45dcc812c1b00184a2edccdddf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a409aa35ff15acaa31d13200a9c4e3c37"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a409aa35ff15acaa31d13200a9c4e3c37">_GC5016_NUM_CMD</a> { <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a409aa35ff15acaa31d13200a9c4e3c37ab2fe0aa7423d40a3f50cc09622345c95">GC5016cmd_SUMENABLE</a> = 64, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a409aa35ff15acaa31d13200a9c4e3c37ac40ef4adeed27614a687e45695ce240e">GC5016cmd_SUMDISABLE</a> = 65, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a409aa35ff15acaa31d13200a9c4e3c37a06fcc01ce7e3761580c3ba56754d5c40">GC5016cmd_SUMCOUNT</a> = 66, 
+<a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a409aa35ff15acaa31d13200a9c4e3c37a5706a72efec19af13411518da2c4be54">GC5016cmd_SUMSHIFT</a> = 67
+ }</td></tr>
+<tr class="separator:a409aa35ff15acaa31d13200a9c4e3c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Типы</h2>
+<a id="a06165d2d2cb5cd2ed62811ab6119d2b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06165d2d2cb5cd2ed62811ab6119d2b5">&#9670;&nbsp;</a></span>BRD_GC5016AdcSetGain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d7/dbc/struct___b_r_d___g_c5016_adc_set_gain.html">_BRD_GC5016AdcSetGain</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a06165d2d2cb5cd2ed62811ab6119d2b5">BRD_GC5016AdcSetGain</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d525d8d69eca8b2ab85f85893fedeff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d525d8d69eca8b2ab85f85893fedeff">&#9670;&nbsp;</a></span>BRD_GC5016Cfg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../df/d80/struct___b_r_d___g_c5016_cfg.html">_BRD_GC5016Cfg</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a8d525d8d69eca8b2ab85f85893fedeff">BRD_GC5016Cfg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3fb54485dea6ea97b589d84a221cd41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3fb54485dea6ea97b589d84a221cd41">&#9670;&nbsp;</a></span>BRD_GC5016Program</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d9/dcd/struct___b_r_d___g_c5016_program.html">_BRD_GC5016Program</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ab3fb54485dea6ea97b589d84a221cd41">BRD_GC5016Program</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a415dbf534d7b4ccf6c80f241c499e7e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415dbf534d7b4ccf6c80f241c499e7e3">&#9670;&nbsp;</a></span>BRD_GC5016ProgramExt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d5/d40/struct___b_r_d___g_c5016_program_ext.html">_BRD_GC5016ProgramExt</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a415dbf534d7b4ccf6c80f241c499e7e3">BRD_GC5016ProgramExt</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae14d7516e47906665ebdaa309c4be11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14d7516e47906665ebdaa309c4be11c">&#9670;&nbsp;</a></span>BRD_GC5016SetFc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../da/dbf/struct___b_r_d___g_c5016_set_fc.html">_BRD_GC5016SetFc</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ae14d7516e47906665ebdaa309c4be11c">BRD_GC5016SetFc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5e8679b45b2f28ce6b875508ccaea9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5e8679b45b2f28ce6b875508ccaea9d">&#9670;&nbsp;</a></span>BRD_GC5016SetReg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d7/d38/struct___b_r_d___g_c5016_set_reg.html">_BRD_GC5016SetReg</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ad5e8679b45b2f28ce6b875508ccaea9d">BRD_GC5016SetReg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f59916ded7e388eb558f62242cbff60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f59916ded7e388eb558f62242cbff60">&#9670;&nbsp;</a></span>BRD_GC5016SetSync</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../df/d5d/struct___b_r_d___g_c5016_set_sync.html">_BRD_GC5016SetSync</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a0f59916ded7e388eb558f62242cbff60">BRD_GC5016SetSync</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a7c46f9a79cc8c72f663b1d788dfb6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a7c46f9a79cc8c72f663b1d788dfb6d">&#9670;&nbsp;</a></span>BRD_GC5016Spec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d6/d19/struct___b_r_d___g_c5016_spec.html">_BRD_GC5016Spec</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a5a7c46f9a79cc8c72f663b1d788dfb6d">BRD_GC5016Spec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef23047188dc48e53ef4d1862a69fe03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef23047188dc48e53ef4d1862a69fe03">&#9670;&nbsp;</a></span>BRD_SetFft</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d5/d3c/struct___b_r_d___set_fft.html">_BRD_SetFft</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aef23047188dc48e53ef4d1862a69fe03">BRD_SetFft</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ef2367d14d5f2de9fb645c21da5a4c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef2367d14d5f2de9fb645c21da5a4c0">&#9670;&nbsp;</a></span>BRD_SetFlt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d7/d98/struct___b_r_d___set_flt.html">_BRD_SetFlt</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a1ef2367d14d5f2de9fb645c21da5a4c0">BRD_SetFlt</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a435124653a60e49ff88dc68212299367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a435124653a60e49ff88dc68212299367">&#9670;&nbsp;</a></span>BRD_SetFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d2/d73/struct___b_r_d___set_frame.html">_BRD_SetFrame</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a435124653a60e49ff88dc68212299367">BRD_SetFrame</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91cb30996e95931e53e21fc2bc36f5a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91cb30996e95931e53e21fc2bc36f5a1">&#9670;&nbsp;</a></span>GC5016_NUM_CMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a409aa35ff15acaa31d13200a9c4e3c37">_GC5016_NUM_CMD</a>  <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a91cb30996e95931e53e21fc2bc36f5a1">GC5016_NUM_CMD</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa102f9198626565ffe7c0b2e028d2d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa102f9198626565ffe7c0b2e028d2d7c">&#9670;&nbsp;</a></span>PBRD_GC5016AdcSetGain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d7/dbc/struct___b_r_d___g_c5016_adc_set_gain.html">_BRD_GC5016AdcSetGain</a>* <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aa102f9198626565ffe7c0b2e028d2d7c">PBRD_GC5016AdcSetGain</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb9660dedbd9301f7ed175e0d6de0717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9660dedbd9301f7ed175e0d6de0717">&#9670;&nbsp;</a></span>PBRD_GC5016Cfg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../df/d80/struct___b_r_d___g_c5016_cfg.html">_BRD_GC5016Cfg</a> * <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#abb9660dedbd9301f7ed175e0d6de0717">PBRD_GC5016Cfg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae98117eb39330169040bf42b62016068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98117eb39330169040bf42b62016068">&#9670;&nbsp;</a></span>PBRD_GC5016Program</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d9/dcd/struct___b_r_d___g_c5016_program.html">_BRD_GC5016Program</a> * <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ae98117eb39330169040bf42b62016068">PBRD_GC5016Program</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af18294281e0ead775bd38a7069c94de3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af18294281e0ead775bd38a7069c94de3">&#9670;&nbsp;</a></span>PBRD_GC5016ProgramExt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d5/d40/struct___b_r_d___g_c5016_program_ext.html">_BRD_GC5016ProgramExt</a> * <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#af18294281e0ead775bd38a7069c94de3">PBRD_GC5016ProgramExt</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefc52059cbbe30ad4dce575d1f98f96e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc52059cbbe30ad4dce575d1f98f96e">&#9670;&nbsp;</a></span>PBRD_GC5016SetFc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../da/dbf/struct___b_r_d___g_c5016_set_fc.html">_BRD_GC5016SetFc</a>* <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aefc52059cbbe30ad4dce575d1f98f96e">PBRD_GC5016SetFc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fba4394726e62fa3b52d8d5b58ce400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fba4394726e62fa3b52d8d5b58ce400">&#9670;&nbsp;</a></span>PBRD_GC5016SetReg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d7/d38/struct___b_r_d___g_c5016_set_reg.html">_BRD_GC5016SetReg</a> * <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a5fba4394726e62fa3b52d8d5b58ce400">PBRD_GC5016SetReg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf9c95a2efdc66b3854da277c9b45c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9c95a2efdc66b3854da277c9b45c42">&#9670;&nbsp;</a></span>PBRD_GC5016SetSync</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../df/d5d/struct___b_r_d___g_c5016_set_sync.html">_BRD_GC5016SetSync</a> * <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aaf9c95a2efdc66b3854da277c9b45c42">PBRD_GC5016SetSync</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6b1a8969196b4520bde17e6b8b264dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6b1a8969196b4520bde17e6b8b264dc">&#9670;&nbsp;</a></span>PBRD_GC5016Spec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d6/d19/struct___b_r_d___g_c5016_spec.html">_BRD_GC5016Spec</a> * <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#ab6b1a8969196b4520bde17e6b8b264dc">PBRD_GC5016Spec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8aba50466d1b7edb9a7fd64524e0021c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aba50466d1b7edb9a7fd64524e0021c">&#9670;&nbsp;</a></span>PBRD_SetFft</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d5/d3c/struct___b_r_d___set_fft.html">_BRD_SetFft</a> * <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a8aba50466d1b7edb9a7fd64524e0021c">PBRD_SetFft</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3f11794d039007653fb54668786e6b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f11794d039007653fb54668786e6b6">&#9670;&nbsp;</a></span>PBRD_SetFlt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d7/d98/struct___b_r_d___set_flt.html">_BRD_SetFlt</a> * <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#aa3f11794d039007653fb54668786e6b6">PBRD_SetFlt</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05e427c5324accc9fe600bbe344d740e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e427c5324accc9fe600bbe344d740e">&#9670;&nbsp;</a></span>PBRD_SetFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="../../d2/d73/struct___b_r_d___set_frame.html">_BRD_SetFrame</a> * <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a05e427c5324accc9fe600bbe344d740e">PBRD_SetFrame</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a4790f45dcc812c1b00184a2edccdddf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4790f45dcc812c1b00184a2edccdddf5">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a5e693776664b7c42346076fe6456cd34"></a>BRDctrl_GC5016_SETMASTER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a82dfddf3e00e77c26ff5c97dbbf01129"></a>BRDctrl_GC5016_GETMASTER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ae5766b7d1c16b23c92e599adb68c915c"></a>BRDctrl_GC5016_SETCHANMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a91f7ec1a2f5e44822ba6f7244ad6a660"></a>BRDctrl_GC5016_GETCHANMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a2bf8ea9e97983ed510814d118b048c2c"></a>BRDctrl_GC5016_SETCLKMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ac6b52edcd6ba01ec4c7eff70cd412988"></a>BRDctrl_GC5016_GETCLKMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a000b4a6d77e80e164d1c731c15f0f9d9"></a>BRDctrl_GC5016_SETSTARTMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a12ccd34144045f1ba2db1334613c3e18"></a>BRDctrl_GC5016_GETSTARTMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a133392f718b2994dbe75438bb867dab4"></a>BRDctrl_GC5016_FIFORESET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a751950626cbff7041ff6620f058049d9"></a>BRDctrl_GC5016_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5aeff254c01e38ae0ec5e984bd0eea0ae0"></a>BRDctrl_GC5016_STOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5afd09e009318bea1b1958c7087ef46f86"></a>BRDctrl_GC5016_FIFOSTATUS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a191e1ece1a39dbe42cce74e4f4f0c8d6"></a>BRDctrl_GC5016_GETDATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a9ba284a3a8c2d802e4827819d0f049a6"></a>BRDctrl_GC5016_SETTARGET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a578b328230515d4c86eca544d34c37d0"></a>BRDctrl_GC5016_GETTARGET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a5b06cb7e7b57817dbb7f0d9e3c38e0b6"></a>BRDctrl_GC5016_GETSRCSTREAM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ad25521829637750072f84d800dca3a2a"></a>BRDctrl_GC5016_GCSETREG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a0bbbbb8ecd8a68b3d856cf2ca5119103"></a>BRDctrl_GC5016_GCGETREG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ae799106dc6e066b2603d2ab465565894"></a>BRDctrl_GC5016_SETADCGAIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a467e4f1f909cfe8e0aa480d7f498bdda"></a>BRDctrl_GC5016_GETADCOVER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a19db4e1c3e0e56eb2c2d3ec32f53e0f7"></a>BRDctrl_GC5016_ADCENABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a3647d8eb884841f7a3d1b697785a4af1"></a>BRDctrl_GC5016_SETDDCFC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a58595503041053e53da25815f1603c87"></a>BRDctrl_GC5016_SETADMMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5aecfe26d1eb5a194ebbc99f754281687c"></a>BRDctrl_GC5016_SETDDCMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a72d6157973008b765d0345b240dff4ad"></a>BRDctrl_GC5016_SETDDCSYNC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a2353fd197cfba99d15e8edc75b68f5cc"></a>BRDctrl_GC5016_PROGRAMDDC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a5af145ddcdc3fdd3cf3c505933486ec2"></a>BRDctrl_GC5016_STARTDDC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a9e969e5a0a323bd6e701780f3f60d643"></a>BRDctrl_GC5016_STOPDDC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5abf2dc75762a1ca8628e09463513970e9"></a>BRDctrl_GC5016_SETTESTMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a60c92db8ab9d7fd9640a066a3045b7a6"></a>BRDctrl_GC5016_GETTESTMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ab4bcf2c28110f37227085eed9ef8be54"></a>BRDctrl_GC5016_SETSTDELAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ab7aa53050d8b9bca214bc25e08c655e2"></a>BRDctrl_GC5016_GETSTDELAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a7809d1b05b58357a560d3e523b861255"></a>BRDctrl_GC5016_SETACQDATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5aae18df04beede0a322b203d69295b131"></a>BRDctrl_GC5016_GETACQDATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5add14806c3632346b198a94e9dbd35361"></a>BRDctrl_GC5016_SETSKIPDATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a60cb4053e8b5b00dd1b28674c653f33b"></a>BRDctrl_GC5016_GETSKIPDATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a83dcf9d65b3f55e18bc8bc8caaef62bd"></a>BRDctrl_GC5016_SETTITLEMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a8f55461092cc9943f1c3c70e9a77a945"></a>BRDctrl_GC5016_GETTITLEMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ac6d4ccb330605e3918ab783b836d5e99"></a>BRDctrl_GC5016_SETTITLEDATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ab019408e125b40ea9862592ae9a311a3"></a>BRDctrl_GC5016_GETTITLEDATA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a7a35ce7e0dda87694d8de519cd420b8a"></a>BRDctrl_GC5016_SETSPECIFIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ad32a928c59c07348d39c03b764ce9988"></a>BRDctrl_GC5016_GETSPECIFIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ad023f101db5d7ef29884a7f7cfa1a890"></a>BRDctrl_GC5016_GETCFG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a467b64b61b16364845e4cd49c0e93185"></a>BRDctrl_GC5016_PROGRAMDDCEXT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a9e06e68094616182bb3654afce0d35fb"></a>BRDctrl_GC5016_STARTDDCEXT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a26fcf7d9142261ba366236704acc4325"></a>BRDctrl_GC5016_STOPDDCEXT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ace5878ea459a7bf7ff26485ad9353a1e"></a>BRDctrl_GC5016_SETDDCFCEXT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a2b22dad517b6aa73b3ffafc9ef7b712e"></a>BRDctrl_GC5016_SETFLT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ac491c16191eca717fdf7d12ecb46cc12"></a>BRDctrl_GC5016_SETFFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5a215c2e31af64f1eb08155df50a79cc93"></a>BRDctrl_GC5016_SETFRAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ae0967e59a2368c9c6c745a585f74fd58"></a>BRDctrl_GC5016_SETNCHANS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4790f45dcc812c1b00184a2edccdddf5ab1b78fd4df29696495caf3db6bd656c6"></a>BRDctrl_GC5016_ILLEGAL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d6/d0e/ctrlgc5016_8h_source.html">ctrlgc5016.h</a> строка <a class="el" href="../../d6/d0e/ctrlgc5016_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a id="a409aa35ff15acaa31d13200a9c4e3c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409aa35ff15acaa31d13200a9c4e3c37">&#9670;&nbsp;</a></span>_GC5016_NUM_CMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d6/d0e/ctrlgc5016_8h.html#a409aa35ff15acaa31d13200a9c4e3c37">_GC5016_NUM_CMD</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a409aa35ff15acaa31d13200a9c4e3c37ab2fe0aa7423d40a3f50cc09622345c95"></a>GC5016cmd_SUMENABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a409aa35ff15acaa31d13200a9c4e3c37ac40ef4adeed27614a687e45695ce240e"></a>GC5016cmd_SUMDISABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a409aa35ff15acaa31d13200a9c4e3c37a06fcc01ce7e3761580c3ba56754d5c40"></a>GC5016cmd_SUMCOUNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a409aa35ff15acaa31d13200a9c4e3c37a5706a72efec19af13411518da2c4be54"></a>GC5016cmd_SUMSHIFT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d6/d0e/ctrlgc5016_8h_source.html">ctrlgc5016.h</a> строка <a class="el" href="../../d6/d0e/ctrlgc5016_8h_source.html#l00158">158</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

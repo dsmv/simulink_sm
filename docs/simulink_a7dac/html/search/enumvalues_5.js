@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['ipc_5fcreate_5ffile',['IPC_CREATE_FILE',['../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796eabfe4797bc2d26dbe2cfa9a125ec66780',1,'fileipc.h']]],
+  ['ipc_5ffile_5fbeg',['IPC_FILE_BEG',['../d1/dd6/fileipc_8h.html#a4129d1292422fa15424a32377498e038ae80e4b259a941ae352b256d01e34271c',1,'fileipc.h']]],
+  ['ipc_5ffile_5fcur',['IPC_FILE_CUR',['../d1/dd6/fileipc_8h.html#a4129d1292422fa15424a32377498e038ab9d267fe623adc4225c2700d6333e241',1,'fileipc.h']]],
+  ['ipc_5ffile_5fdirect',['IPC_FILE_DIRECT',['../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796eac757b5890d74acfea2d9f30002f736cc',1,'fileipc.h']]],
+  ['ipc_5ffile_5fend',['IPC_FILE_END',['../d1/dd6/fileipc_8h.html#a4129d1292422fa15424a32377498e038a7a93f63c94c9faaab80910b689d42516',1,'fileipc.h']]],
+  ['ipc_5ffile_5fnobuffer',['IPC_FILE_NOBUFFER',['../d1/dd6/fileipc_8h.html#a1b67aa7e5d17ca06f61baacab371dde3a13c0d2b1b9d151407d212f8e3057c896',1,'fileipc.h']]],
+  ['ipc_5ffile_5fnormal',['IPC_FILE_NORMAL',['../d1/dd6/fileipc_8h.html#a1b67aa7e5d17ca06f61baacab371dde3ab6d46edbdb66a0e6db3004be29965450',1,'fileipc.h']]],
+  ['ipc_5ffile_5frdonly',['IPC_FILE_RDONLY',['../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796ea0b80eee6ca166d670003ade973e3ff24',1,'fileipc.h']]],
+  ['ipc_5ffile_5frdwr',['IPC_FILE_RDWR',['../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796ea7397d419f4fecd145458e6a3e29f7fcf',1,'fileipc.h']]],
+  ['ipc_5ffile_5fwronly',['IPC_FILE_WRONLY',['../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796ea20ce84d74fde152adb34e71a0a951979',1,'fileipc.h']]],
+  ['ipc_5ffile_5fwrthrough',['IPC_FILE_WRTHROUGH',['../d1/dd6/fileipc_8h.html#a1b67aa7e5d17ca06f61baacab371dde3a8b72eb8ebcaf19c1ab19937ba0460e39',1,'fileipc.h']]],
+  ['ipc_5fopen_5ffile',['IPC_OPEN_FILE',['../d1/dd6/fileipc_8h.html#a6c16e630d0a999ea29a7a075ec74796ea027dea0a35b15ce12053e7b553942429',1,'fileipc.h']]],
+  ['ipc_5ftcp',['IPC_tcp',['../dc/d0f/sockipc_8h.html#a13714f3af6886f6fa7495448be20feaea5a649cf650f94afac7d227139f2ecb99',1,'sockipc.h']]],
+  ['ipc_5ftypedevice',['IPC_typeDevice',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1ca6c826c3690bb06b70428ed0d4bb26523',1,'ipctype.h']]],
+  ['ipc_5ftypedir',['IPC_typeDir',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1ca4903feb901dc8a43e4f88c83bd94fa8f',1,'ipctype.h']]],
+  ['ipc_5ftypeevent',['IPC_typeEvent',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1ca7e7c13ec0ee0f344b56bae26afc21721',1,'ipctype.h']]],
+  ['ipc_5ftypefile',['IPC_typeFile',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1ca5db7f4f9ee9f5fc456aad4bce517789e',1,'ipctype.h']]],
+  ['ipc_5ftypelibrary',['IPC_typeLibrary',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1ca6a3d9b195880edc1415d768a149f32ff',1,'ipctype.h']]],
+  ['ipc_5ftypemutex',['IPC_typeMutex',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1ca980e07f1e2b65a163f0bf6063a8c9deb',1,'ipctype.h']]],
+  ['ipc_5ftypesemaphore',['IPC_typeSemaphore',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1ca0fbc2eddcc2a8815a1436868e07c3ab9',1,'ipctype.h']]],
+  ['ipc_5ftypesharedmem',['IPC_typeSharedMem',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1cae3d95e60e9ff6edfa24c3e7148b52429',1,'ipctype.h']]],
+  ['ipc_5ftypesocket',['IPC_typeSocket',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1ca0c148f8997e18897650ea23428a67eee',1,'ipctype.h']]],
+  ['ipc_5ftypethread',['IPC_typeThread',['../d5/da8/ipctype_8h.html#a0defb97ffb8970ad73a7baacd0989c1cad8aaa92a2392b43031a10e7af1529375',1,'ipctype.h']]],
+  ['ipc_5fudp',['IPC_udp',['../dc/d0f/sockipc_8h.html#a13714f3af6886f6fa7495448be20feaea377ba860209cbb5fa6dfd435b0b5aafe',1,'sockipc.h']]]
+];

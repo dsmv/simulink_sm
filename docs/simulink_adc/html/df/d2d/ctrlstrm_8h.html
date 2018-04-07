@@ -1,0 +1,818 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SIMULINK_ADC: Файл E:/_github/simulink_sm/simulink_adc/src/bardy/ctrlstrm.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SIMULINK_ADC
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Приём данных от АЦП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','Поиск');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_9cc6fcdd0606c05e12b8eb4ba0303406.html">bardy</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл ctrlstrm.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../dc/d5f/_ctrl_8h_source.html">ctrl.h</a>&quot;</code><br />
+</div>
+<p><a href="../../df/d2d/ctrlstrm_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dee/struct_b_r_dstrm___stub.html">BRDstrm_Stub</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d4f/struct_b_r_dctrl___stream_c_buf_alloc.html">BRDctrl_StreamCBufAlloc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d49/struct_b_r_dctrl___stream_c_buf_start.html">BRDctrl_StreamCBufStart</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6c/struct_b_r_dctrl___stream_c_buf_stop.html">BRDctrl_StreamCBufStop</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd9/struct_b_r_dctrl___stream_c_buf_state.html">BRDctrl_StreamCBufState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d24/struct_b_r_dctrl___stream_c_buf_attach.html">BRDctrl_StreamCBufAttach</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dac/struct_b_r_dctrl___stream_c_buf_wait_block.html">BRDctrl_StreamCBufWaitBlock</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d43/struct_b_r_dctrl___stream_c_buf_wait_buf.html">BRDctrl_StreamCBufWaitBuf</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d62/struct_b_r_dctrl___stream_set_dir.html">BRDctrl_StreamSetDir</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/daa/struct_b_r_dctrl___stream_set_src.html">BRDctrl_StreamSetSrc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6f/struct_b_r_dctrl___stream_set_drq.html">BRDctrl_StreamSetDrq</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dee/struct_b_r_dctrl___stream_reset_fifo.html">BRDctrl_StreamResetFifo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/da0/struct_b_r_dctrl___stream_c_buf_adjust.html">BRDctrl_StreamCBufAdjust</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d57/struct_b_r_dctrl___stream_c_buf_done.html">BRDctrl_StreamCBufDone</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da8/struct_b_r_dctrl___stream_version.html">BRDctrl_StreamVersion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd7/struct_b_r_dctrl___stream_set_irq_mode.html">BRDctrl_StreamSetIrqMode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a53b361f3a0e25b74878a7f1862cd59f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a53b361f3a0e25b74878a7f1862cd59f8">BRDerr_STREAM_WARNING</a>&#160;&#160;&#160;0x40000E00L</td></tr>
+<tr class="separator:a53b361f3a0e25b74878a7f1862cd59f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab267c215fc914480fbe63dedf0e84fe1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#ab267c215fc914480fbe63dedf0e84fe1">BRDerr_STREAM_SUSPENDED</a>&#160;&#160;&#160;0x40000E01L</td></tr>
+<tr class="separator:ab267c215fc914480fbe63dedf0e84fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694ac1f9639eb7be9048da4c99234071"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a694ac1f9639eb7be9048da4c99234071">BRDerr_STREAM_ERROR</a>&#160;&#160;&#160;0xC0000E00L</td></tr>
+<tr class="separator:a694ac1f9639eb7be9048da4c99234071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a076d894a5dd4ba70607591be529aa01e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a076d894a5dd4ba70607591be529aa01e">BRDerr_STREAM_ALREADY_ALLOCATED</a>&#160;&#160;&#160;0xC0000E01L</td></tr>
+<tr class="separator:a076d894a5dd4ba70607591be529aa01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9eafe3cb9d2e6e0a05037e67a3784c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#aa9eafe3cb9d2e6e0a05037e67a3784c1">BRDerr_STREAM_NOT_ALLOCATED_YET</a>&#160;&#160;&#160;0xC0000E02L</td></tr>
+<tr class="separator:aa9eafe3cb9d2e6e0a05037e67a3784c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8557b07c33106a89435b3b12803073"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#afb8557b07c33106a89435b3b12803073">BRDerr_STREAM_CONTINUOUS</a>&#160;&#160;&#160;0xC0000E03L</td></tr>
+<tr class="separator:afb8557b07c33106a89435b3b12803073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad337ba30c18d085b73db3d6e6ebee359"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#ad337ba30c18d085b73db3d6e6ebee359">BRDerr_STREAM_ALREADY_DESTROYED</a>&#160;&#160;&#160;0xC0000E04L</td></tr>
+<tr class="separator:ad337ba30c18d085b73db3d6e6ebee359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303094bbae7f894ac99dccfd10d55ab0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a303094bbae7f894ac99dccfd10d55ab0">BRDerr_STREAM_UNLOCKED</a>&#160;&#160;&#160;0xC0000E05L</td></tr>
+<tr class="separator:a303094bbae7f894ac99dccfd10d55ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f135b93b07e353f5d5ee4c921b031b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a30f135b93b07e353f5d5ee4c921b031b">BRDerr_STREAM_ALREADY_STARTED</a>&#160;&#160;&#160;0xC0000E06L</td></tr>
+<tr class="separator:a30f135b93b07e353f5d5ee4c921b031b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8526a595706bf132fc00515b8c55a95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#ae8526a595706bf132fc00515b8c55a95">BRDerr_STREAM_NOT_STARTED_YET</a>&#160;&#160;&#160;0xC0000E07L</td></tr>
+<tr class="separator:ae8526a595706bf132fc00515b8c55a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9823f3927b4b9c3e1fbfc6c4cb82ddb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a9823f3927b4b9c3e1fbfc6c4cb82ddb5">BRDerr_STREAM_NOT_STOPPED_YET</a>&#160;&#160;&#160;0xC0000E08L</td></tr>
+<tr class="separator:a9823f3927b4b9c3e1fbfc6c4cb82ddb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a84c6e1e305daa5ab9dc5d18044cb99fc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/dee/struct_b_r_dstrm___stub.html">BRDstrm_Stub</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a84c6e1e305daa5ab9dc5d18044cb99fc">PBRDstrm_Stub</a></td></tr>
+<tr class="separator:a84c6e1e305daa5ab9dc5d18044cb99fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47d3e42dcaee13eec18da370618e7dcf"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/dee/struct_b_r_dstrm___stub.html">BRDstrm_Stub</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a47d3e42dcaee13eec18da370618e7dcf">BRDctrl_StreamStub</a></td></tr>
+<tr class="separator:a47d3e42dcaee13eec18da370618e7dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fb6e96decf7faaa84a188f9de51827"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/dee/struct_b_r_dstrm___stub.html">BRDstrm_Stub</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a59fb6e96decf7faaa84a188f9de51827">PBRDctrl_StreamStub</a></td></tr>
+<tr class="separator:a59fb6e96decf7faaa84a188f9de51827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ab95dbf5736a1e4cb9c4139c1f2561"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../de/d4f/struct_b_r_dctrl___stream_c_buf_alloc.html">BRDctrl_StreamCBufAlloc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#ac0ab95dbf5736a1e4cb9c4139c1f2561">PBRDctrl_StreamCBufAlloc</a></td></tr>
+<tr class="separator:ac0ab95dbf5736a1e4cb9c4139c1f2561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0cb205f13e3118455220b613ef8881"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../de/d4f/struct_b_r_dctrl___stream_c_buf_alloc.html">BRDctrl_StreamCBufAlloc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a9d0cb205f13e3118455220b613ef8881">BRDctrl_StreamCBufRealloc</a></td></tr>
+<tr class="separator:a9d0cb205f13e3118455220b613ef8881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b46386f7c90bb0b1128114085a63f7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../de/d4f/struct_b_r_dctrl___stream_c_buf_alloc.html">BRDctrl_StreamCBufAlloc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a30b46386f7c90bb0b1128114085a63f7">PBRDctrl_StreamCBufRealloc</a></td></tr>
+<tr class="separator:a30b46386f7c90bb0b1128114085a63f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bf72115c62c7c8f203c7e285391eaa"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d9/d49/struct_b_r_dctrl___stream_c_buf_start.html">BRDctrl_StreamCBufStart</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a68bf72115c62c7c8f203c7e285391eaa">PBRDctrl_StreamCBufStart</a></td></tr>
+<tr class="separator:a68bf72115c62c7c8f203c7e285391eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee515251283abca395f526ef437cfa2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../db/d6c/struct_b_r_dctrl___stream_c_buf_stop.html">BRDctrl_StreamCBufStop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a1ee515251283abca395f526ef437cfa2">PBRDctrl_StreamCBufStop</a></td></tr>
+<tr class="separator:a1ee515251283abca395f526ef437cfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13f0a8380b0c2719546ab9d8165d52b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d9/dd9/struct_b_r_dctrl___stream_c_buf_state.html">BRDctrl_StreamCBufState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#af13f0a8380b0c2719546ab9d8165d52b">PBRDctrl_StreamCBufState</a></td></tr>
+<tr class="separator:af13f0a8380b0c2719546ab9d8165d52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711a9df3a623e28f5a7d0a54576696db"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d1/d24/struct_b_r_dctrl___stream_c_buf_attach.html">BRDctrl_StreamCBufAttach</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a711a9df3a623e28f5a7d0a54576696db">PBRDctrl_StreamCBufAttach</a></td></tr>
+<tr class="separator:a711a9df3a623e28f5a7d0a54576696db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab243bcc9cd45a3bffe4a4e2f042ef5ed"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../db/dac/struct_b_r_dctrl___stream_c_buf_wait_block.html">BRDctrl_StreamCBufWaitBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#ab243bcc9cd45a3bffe4a4e2f042ef5ed">PBRDctrl_StreamCBufWaitBlock</a></td></tr>
+<tr class="separator:ab243bcc9cd45a3bffe4a4e2f042ef5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83ffb4fe97f959f2b6b3d1b3787d1be"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../db/d43/struct_b_r_dctrl___stream_c_buf_wait_buf.html">BRDctrl_StreamCBufWaitBuf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#ad83ffb4fe97f959f2b6b3d1b3787d1be">PBRDctrl_StreamCBufWaitBuf</a></td></tr>
+<tr class="separator:ad83ffb4fe97f959f2b6b3d1b3787d1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0523f2523ab3ec154b42fcfd1846f388"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d3/d62/struct_b_r_dctrl___stream_set_dir.html">BRDctrl_StreamSetDir</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a0523f2523ab3ec154b42fcfd1846f388">PBRDctrl_StreamSetDir</a></td></tr>
+<tr class="separator:a0523f2523ab3ec154b42fcfd1846f388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562c090487c894b1c07aa00158699908"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d3/d62/struct_b_r_dctrl___stream_set_dir.html">BRDctrl_StreamSetDir</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a562c090487c894b1c07aa00158699908">BRDctrl_StreamGetDir</a></td></tr>
+<tr class="separator:a562c090487c894b1c07aa00158699908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ba1cbda89aaf31bf7bbdaabf744716"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d3/d62/struct_b_r_dctrl___stream_set_dir.html">BRDctrl_StreamSetDir</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a15ba1cbda89aaf31bf7bbdaabf744716">PBRDctrl_StreamGetDir</a></td></tr>
+<tr class="separator:a15ba1cbda89aaf31bf7bbdaabf744716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e9fb9e6c7fe022eb8b633d3674a9efc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d3/daa/struct_b_r_dctrl___stream_set_src.html">BRDctrl_StreamSetSrc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a4e9fb9e6c7fe022eb8b633d3674a9efc">PBRDctrl_StreamSetSrc</a></td></tr>
+<tr class="separator:a4e9fb9e6c7fe022eb8b633d3674a9efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a3e59764b9584d963311112dcf7ad9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d6/d6f/struct_b_r_dctrl___stream_set_drq.html">BRDctrl_StreamSetDrq</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#aa6a3e59764b9584d963311112dcf7ad9">PBRDctrl_StreamSetDrq</a></td></tr>
+<tr class="separator:aa6a3e59764b9584d963311112dcf7ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae794ff84314318d21d0df5843e735de4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d7/dee/struct_b_r_dctrl___stream_reset_fifo.html">BRDctrl_StreamResetFifo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#ae794ff84314318d21d0df5843e735de4">PBRDctrl_StreamResetFifo</a></td></tr>
+<tr class="separator:ae794ff84314318d21d0df5843e735de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc09e32610a4cd4ee544ecc83eab95fb"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d9/da0/struct_b_r_dctrl___stream_c_buf_adjust.html">BRDctrl_StreamCBufAdjust</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#acc09e32610a4cd4ee544ecc83eab95fb">PBRDctrl_StreamCBufAdjust</a></td></tr>
+<tr class="separator:acc09e32610a4cd4ee544ecc83eab95fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1999cb730290a5d20ecc9c6b4b4fcb89"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../df/d57/struct_b_r_dctrl___stream_c_buf_done.html">BRDctrl_StreamCBufDone</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a1999cb730290a5d20ecc9c6b4b4fcb89">PBRDctrl_StreamCBufDone</a></td></tr>
+<tr class="separator:a1999cb730290a5d20ecc9c6b4b4fcb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e8f0ba025a4cee13aeaa9cc3bf0c24"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d8/da8/struct_b_r_dctrl___stream_version.html">BRDctrl_StreamVersion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a49e8f0ba025a4cee13aeaa9cc3bf0c24">PBRDctrl_StreamVersion</a></td></tr>
+<tr class="separator:a49e8f0ba025a4cee13aeaa9cc3bf0c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d59a22141d68186d6e7fcf187432a57"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="../../d2/dd7/struct_b_r_dctrl___stream_set_irq_mode.html">BRDctrl_StreamSetIrqMode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2d/ctrlstrm_8h.html#a4d59a22141d68186d6e7fcf187432a57">PBRDctrl_StreamSetIrqMode</a></td></tr>
+<tr class="separator:a4d59a22141d68186d6e7fcf187432a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:afa231099d07583c3ed0981e0bb665f55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a49e94cc3a7f518cfb23e20b9726cae7a">BRDctrl_STREAM_CBUF_ALLOC</a> = BRDctrl_STREAM + 0, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a801d7d758542a6e231e48cf448e4fdc2">BRDctrl_STREAM_CBUF_REALLOC</a> = BRDctrl_STREAM + 1, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a1fdb215d2a66df883313f07a06e46f35">BRDctrl_STREAM_CBUF_FREE</a> = BRDctrl_STREAM + 2, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55ac7195722be68d9e14b743f926fe82404">BRDctrl_STREAM_CBUF_START</a> = BRDctrl_STREAM + 3, 
+<br />
+&#160;&#160;<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a00558575abca34eeeada0f04476fb77b">BRDctrl_STREAM_CBUF_STOP</a> = BRDctrl_STREAM + 4, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55ad18245d0da70aad6592dddb6fcc879e1">BRDctrl_STREAM_CBUF_STATE</a> = BRDctrl_STREAM + 5, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55adcdd5ac63194269bc4c95e6cb6158319">BRDctrl_STREAM_CBUF_ATTACH</a> = BRDctrl_STREAM + 6, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a01f01c71b40dd9d62f1476da4198c941">BRDctrl_STREAM_CBUF_DETACH</a> = BRDctrl_STREAM + 7, 
+<br />
+&#160;&#160;<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55ab31c9db8619648ae063bc343b6593d4f">BRDctrl_STREAM_CBUF_WAITBLOCK</a> = BRDctrl_STREAM + 8, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a686b0ea8a17e454791b00963351a353b">BRDctrl_STREAM_CBUF_WAITBUF</a> = BRDctrl_STREAM + 9, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55adcc9f5befd412571656bf6f9325b3579">BRDctrl_STREAM_SETDIR</a> = BRDctrl_STREAM +10, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a96a1ac5b6b45b72aa74b18cc9bee5d68">BRDctrl_STREAM_SETSRC</a> = BRDctrl_STREAM +11, 
+<br />
+&#160;&#160;<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a9a3ae96bb269efedb5c89354a6e77661">BRDctrl_STREAM_SETDRQ</a> = BRDctrl_STREAM +12, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a71461de5b226117d214129549eff2dc6">BRDctrl_STREAM_RESETFIFO</a> = BRDctrl_STREAM +13, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55acc0f4598a6c4368b604b5a534c1f69a2">BRDctrl_STREAM_CBUF_ADJUST</a> = BRDctrl_STREAM +14, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a38da9e15425ac8551b58f2a0ea540623">BRDctrl_STREAM_CBUF_DONE</a> = BRDctrl_STREAM +15, 
+<br />
+&#160;&#160;<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55ad38fdcbc8a8c59745862208b243edeaa">BRDctrl_STREAM_GETDIR</a> = BRDctrl_STREAM +16, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a67f6bda7303595d132d46e55ba8871b9">BRDctrl_STREAM_VERSION</a> = BRDctrl_STREAM +17, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a388ccfda54c42706ee12a0ca704ade0b">BRDctrl_STREAM_CBUF_WAITBLOCKEX</a> = BRDctrl_STREAM + 18, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a8c398b7455c3543576163b62edb29ff7">BRDctrl_STREAM_CBUF_WAITBUFEX</a> = BRDctrl_STREAM + 19, 
+<br />
+&#160;&#160;<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55afbf9f971289a920f53ecb88bfa7443dc">BRDctrl_STREAM_SETIRQMODE</a> = BRDctrl_STREAM +20, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#afa231099d07583c3ed0981e0bb665f55a6e69a7d41a8101c63c688e1453afb7ac">BRDctrl_STREAM_ILLEGAL</a>
+<br />
+ }</td></tr>
+<tr class="separator:afa231099d07583c3ed0981e0bb665f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394b3903fbf00ba2b6243f60689a5a5f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa9bfdf3e30650ca30d6952ef5b595fa4d">BRDstrm_STAT_RUN</a> = 1, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#a394b3903fbf00ba2b6243f60689a5a5faafae3fdfcc1df537c0855b9bd00feb82">BRDstrm_STAT_STOP</a> = 2, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa7a058e3035f5ab53dbdf45b187b60a27">BRDstrm_STAT_DESTROY</a> = 3, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#a394b3903fbf00ba2b6243f60689a5a5fa9f777de0ad25f8f54ac1b8a537990017">BRDstrm_STAT_BREAK</a> = 4
+ }</td></tr>
+<tr class="separator:a394b3903fbf00ba2b6243f60689a5a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac205be2172292384dd687b5471a87edd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../df/d2d/ctrlstrm_8h.html#ac205be2172292384dd687b5471a87eddaaf22960d2fee57c53ec34969cec38a1f">BRDstrm_DIR_IN</a> = 0x1, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#ac205be2172292384dd687b5471a87edda0ac13eb3999384057c718fd4c4c59748">BRDstrm_DIR_OUT</a> = 0x2, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#ac205be2172292384dd687b5471a87edda938206d0948bbc552642277446c4fa8e">BRDstrm_DIR_INOUT</a> = 0x3
+ }</td></tr>
+<tr class="separator:ac205be2172292384dd687b5471a87edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157d5577a5b2f5986037d0d09c7dc77d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a157d5577a5b2f5986037d0d09c7dc77dacf7a39f84dc394d8b1659d36249d58aa">BRDstrm_DRQ_ALMOST</a> = 0x0, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#a157d5577a5b2f5986037d0d09c7dc77da662b08bf9de9f18cb15a95ae5c0b452f">BRDstrm_DRQ_READY</a> = 0x1, 
+<a class="el" href="../../df/d2d/ctrlstrm_8h.html#a157d5577a5b2f5986037d0d09c7dc77dab7bd44f4130f4fc1e588849fb790b97c">BRDstrm_DRQ_HALF</a> = 0x2
+ }</td></tr>
+<tr class="separator:a157d5577a5b2f5986037d0d09c7dc77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a076d894a5dd4ba70607591be529aa01e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a076d894a5dd4ba70607591be529aa01e">&#9670;&nbsp;</a></span>BRDerr_STREAM_ALREADY_ALLOCATED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_ALREADY_ALLOCATED&#160;&#160;&#160;0xC0000E01L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00295">295</a></p>
+
+</div>
+</div>
+<a id="ad337ba30c18d085b73db3d6e6ebee359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad337ba30c18d085b73db3d6e6ebee359">&#9670;&nbsp;</a></span>BRDerr_STREAM_ALREADY_DESTROYED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_ALREADY_DESTROYED&#160;&#160;&#160;0xC0000E04L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00321">321</a></p>
+
+</div>
+</div>
+<a id="a30f135b93b07e353f5d5ee4c921b031b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f135b93b07e353f5d5ee4c921b031b">&#9670;&nbsp;</a></span>BRDerr_STREAM_ALREADY_STARTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_ALREADY_STARTED&#160;&#160;&#160;0xC0000E06L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00336">336</a></p>
+
+</div>
+</div>
+<a id="afb8557b07c33106a89435b3b12803073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8557b07c33106a89435b3b12803073">&#9670;&nbsp;</a></span>BRDerr_STREAM_CONTINUOUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_CONTINUOUS&#160;&#160;&#160;0xC0000E03L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00311">311</a></p>
+
+</div>
+</div>
+<a id="a694ac1f9639eb7be9048da4c99234071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a694ac1f9639eb7be9048da4c99234071">&#9670;&nbsp;</a></span>BRDerr_STREAM_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_ERROR&#160;&#160;&#160;0xC0000E00L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00287">287</a></p>
+
+</div>
+</div>
+<a id="aa9eafe3cb9d2e6e0a05037e67a3784c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9eafe3cb9d2e6e0a05037e67a3784c1">&#9670;&nbsp;</a></span>BRDerr_STREAM_NOT_ALLOCATED_YET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_NOT_ALLOCATED_YET&#160;&#160;&#160;0xC0000E02L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00303">303</a></p>
+
+</div>
+</div>
+<a id="ae8526a595706bf132fc00515b8c55a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8526a595706bf132fc00515b8c55a95">&#9670;&nbsp;</a></span>BRDerr_STREAM_NOT_STARTED_YET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_NOT_STARTED_YET&#160;&#160;&#160;0xC0000E07L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00345">345</a></p>
+
+</div>
+</div>
+<a id="a9823f3927b4b9c3e1fbfc6c4cb82ddb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9823f3927b4b9c3e1fbfc6c4cb82ddb5">&#9670;&nbsp;</a></span>BRDerr_STREAM_NOT_STOPPED_YET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_NOT_STOPPED_YET&#160;&#160;&#160;0xC0000E08L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00353">353</a></p>
+
+</div>
+</div>
+<a id="ab267c215fc914480fbe63dedf0e84fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab267c215fc914480fbe63dedf0e84fe1">&#9670;&nbsp;</a></span>BRDerr_STREAM_SUSPENDED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_SUSPENDED&#160;&#160;&#160;0x40000E01L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00280">280</a></p>
+
+</div>
+</div>
+<a id="a303094bbae7f894ac99dccfd10d55ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303094bbae7f894ac99dccfd10d55ab0">&#9670;&nbsp;</a></span>BRDerr_STREAM_UNLOCKED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_UNLOCKED&#160;&#160;&#160;0xC0000E05L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00328">328</a></p>
+
+</div>
+</div>
+<a id="a53b361f3a0e25b74878a7f1862cd59f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b361f3a0e25b74878a7f1862cd59f8">&#9670;&nbsp;</a></span>BRDerr_STREAM_WARNING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRDerr_STREAM_WARNING&#160;&#160;&#160;0x40000E00L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00273">273</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Типы</h2>
+<a id="a9d0cb205f13e3118455220b613ef8881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d0cb205f13e3118455220b613ef8881">&#9670;&nbsp;</a></span>BRDctrl_StreamCBufRealloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../de/d4f/struct_b_r_dctrl___stream_c_buf_alloc.html">BRDctrl_StreamCBufAlloc</a>
+   <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a9d0cb205f13e3118455220b613ef8881">BRDctrl_StreamCBufRealloc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a562c090487c894b1c07aa00158699908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562c090487c894b1c07aa00158699908">&#9670;&nbsp;</a></span>BRDctrl_StreamGetDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d3/d62/struct_b_r_dctrl___stream_set_dir.html">BRDctrl_StreamSetDir</a> 
+   <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a562c090487c894b1c07aa00158699908">BRDctrl_StreamGetDir</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47d3e42dcaee13eec18da370618e7dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47d3e42dcaee13eec18da370618e7dcf">&#9670;&nbsp;</a></span>BRDctrl_StreamStub</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d7/dee/struct_b_r_dstrm___stub.html">BRDstrm_Stub</a>  <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a47d3e42dcaee13eec18da370618e7dcf">BRDctrl_StreamStub</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc09e32610a4cd4ee544ecc83eab95fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc09e32610a4cd4ee544ecc83eab95fb">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufAdjust</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d9/da0/struct_b_r_dctrl___stream_c_buf_adjust.html">BRDctrl_StreamCBufAdjust</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#acc09e32610a4cd4ee544ecc83eab95fb">PBRDctrl_StreamCBufAdjust</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0ab95dbf5736a1e4cb9c4139c1f2561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ab95dbf5736a1e4cb9c4139c1f2561">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufAlloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../de/d4f/struct_b_r_dctrl___stream_c_buf_alloc.html">BRDctrl_StreamCBufAlloc</a>   * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#ac0ab95dbf5736a1e4cb9c4139c1f2561">PBRDctrl_StreamCBufAlloc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a711a9df3a623e28f5a7d0a54576696db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a711a9df3a623e28f5a7d0a54576696db">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufAttach</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d1/d24/struct_b_r_dctrl___stream_c_buf_attach.html">BRDctrl_StreamCBufAttach</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a711a9df3a623e28f5a7d0a54576696db">PBRDctrl_StreamCBufAttach</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1999cb730290a5d20ecc9c6b4b4fcb89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1999cb730290a5d20ecc9c6b4b4fcb89">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufDone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../df/d57/struct_b_r_dctrl___stream_c_buf_done.html">BRDctrl_StreamCBufDone</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a1999cb730290a5d20ecc9c6b4b4fcb89">PBRDctrl_StreamCBufDone</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30b46386f7c90bb0b1128114085a63f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b46386f7c90bb0b1128114085a63f7">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufRealloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../de/d4f/struct_b_r_dctrl___stream_c_buf_alloc.html">BRDctrl_StreamCBufAlloc</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a30b46386f7c90bb0b1128114085a63f7">PBRDctrl_StreamCBufRealloc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68bf72115c62c7c8f203c7e285391eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68bf72115c62c7c8f203c7e285391eaa">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d9/d49/struct_b_r_dctrl___stream_c_buf_start.html">BRDctrl_StreamCBufStart</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a68bf72115c62c7c8f203c7e285391eaa">PBRDctrl_StreamCBufStart</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af13f0a8380b0c2719546ab9d8165d52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13f0a8380b0c2719546ab9d8165d52b">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d9/dd9/struct_b_r_dctrl___stream_c_buf_state.html">BRDctrl_StreamCBufState</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#af13f0a8380b0c2719546ab9d8165d52b">PBRDctrl_StreamCBufState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ee515251283abca395f526ef437cfa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee515251283abca395f526ef437cfa2">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufStop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../db/d6c/struct_b_r_dctrl___stream_c_buf_stop.html">BRDctrl_StreamCBufStop</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a1ee515251283abca395f526ef437cfa2">PBRDctrl_StreamCBufStop</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab243bcc9cd45a3bffe4a4e2f042ef5ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab243bcc9cd45a3bffe4a4e2f042ef5ed">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufWaitBlock</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../db/dac/struct_b_r_dctrl___stream_c_buf_wait_block.html">BRDctrl_StreamCBufWaitBlock</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#ab243bcc9cd45a3bffe4a4e2f042ef5ed">PBRDctrl_StreamCBufWaitBlock</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad83ffb4fe97f959f2b6b3d1b3787d1be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83ffb4fe97f959f2b6b3d1b3787d1be">&#9670;&nbsp;</a></span>PBRDctrl_StreamCBufWaitBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../db/d43/struct_b_r_dctrl___stream_c_buf_wait_buf.html">BRDctrl_StreamCBufWaitBuf</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#ad83ffb4fe97f959f2b6b3d1b3787d1be">PBRDctrl_StreamCBufWaitBuf</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15ba1cbda89aaf31bf7bbdaabf744716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ba1cbda89aaf31bf7bbdaabf744716">&#9670;&nbsp;</a></span>PBRDctrl_StreamGetDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d3/d62/struct_b_r_dctrl___stream_set_dir.html">BRDctrl_StreamSetDir</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a15ba1cbda89aaf31bf7bbdaabf744716">PBRDctrl_StreamGetDir</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae794ff84314318d21d0df5843e735de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae794ff84314318d21d0df5843e735de4">&#9670;&nbsp;</a></span>PBRDctrl_StreamResetFifo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d7/dee/struct_b_r_dctrl___stream_reset_fifo.html">BRDctrl_StreamResetFifo</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#ae794ff84314318d21d0df5843e735de4">PBRDctrl_StreamResetFifo</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0523f2523ab3ec154b42fcfd1846f388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0523f2523ab3ec154b42fcfd1846f388">&#9670;&nbsp;</a></span>PBRDctrl_StreamSetDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d3/d62/struct_b_r_dctrl___stream_set_dir.html">BRDctrl_StreamSetDir</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a0523f2523ab3ec154b42fcfd1846f388">PBRDctrl_StreamSetDir</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6a3e59764b9584d963311112dcf7ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a3e59764b9584d963311112dcf7ad9">&#9670;&nbsp;</a></span>PBRDctrl_StreamSetDrq</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d6/d6f/struct_b_r_dctrl___stream_set_drq.html">BRDctrl_StreamSetDrq</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#aa6a3e59764b9584d963311112dcf7ad9">PBRDctrl_StreamSetDrq</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d59a22141d68186d6e7fcf187432a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d59a22141d68186d6e7fcf187432a57">&#9670;&nbsp;</a></span>PBRDctrl_StreamSetIrqMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d2/dd7/struct_b_r_dctrl___stream_set_irq_mode.html">BRDctrl_StreamSetIrqMode</a>   * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a4d59a22141d68186d6e7fcf187432a57">PBRDctrl_StreamSetIrqMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e9fb9e6c7fe022eb8b633d3674a9efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9fb9e6c7fe022eb8b633d3674a9efc">&#9670;&nbsp;</a></span>PBRDctrl_StreamSetSrc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d3/daa/struct_b_r_dctrl___stream_set_src.html">BRDctrl_StreamSetSrc</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a4e9fb9e6c7fe022eb8b633d3674a9efc">PBRDctrl_StreamSetSrc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59fb6e96decf7faaa84a188f9de51827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59fb6e96decf7faaa84a188f9de51827">&#9670;&nbsp;</a></span>PBRDctrl_StreamStub</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d7/dee/struct_b_r_dstrm___stub.html">BRDstrm_Stub</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a59fb6e96decf7faaa84a188f9de51827">PBRDctrl_StreamStub</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49e8f0ba025a4cee13aeaa9cc3bf0c24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e8f0ba025a4cee13aeaa9cc3bf0c24">&#9670;&nbsp;</a></span>PBRDctrl_StreamVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d8/da8/struct_b_r_dctrl___stream_version.html">BRDctrl_StreamVersion</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a49e8f0ba025a4cee13aeaa9cc3bf0c24">PBRDctrl_StreamVersion</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84c6e1e305daa5ab9dc5d18044cb99fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c6e1e305daa5ab9dc5d18044cb99fc">&#9670;&nbsp;</a></span>PBRDstrm_Stub</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="../../d7/dee/struct_b_r_dstrm___stub.html">BRDstrm_Stub</a> * <a class="el" href="../../df/d2d/ctrlstrm_8h.html#a84c6e1e305daa5ab9dc5d18044cb99fc">PBRDstrm_Stub</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Перечисления</h2>
+<a id="afa231099d07583c3ed0981e0bb665f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa231099d07583c3ed0981e0bb665f55">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a49e94cc3a7f518cfb23e20b9726cae7a"></a>BRDctrl_STREAM_CBUF_ALLOC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a801d7d758542a6e231e48cf448e4fdc2"></a>BRDctrl_STREAM_CBUF_REALLOC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a1fdb215d2a66df883313f07a06e46f35"></a>BRDctrl_STREAM_CBUF_FREE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55ac7195722be68d9e14b743f926fe82404"></a>BRDctrl_STREAM_CBUF_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a00558575abca34eeeada0f04476fb77b"></a>BRDctrl_STREAM_CBUF_STOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55ad18245d0da70aad6592dddb6fcc879e1"></a>BRDctrl_STREAM_CBUF_STATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55adcdd5ac63194269bc4c95e6cb6158319"></a>BRDctrl_STREAM_CBUF_ATTACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a01f01c71b40dd9d62f1476da4198c941"></a>BRDctrl_STREAM_CBUF_DETACH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55ab31c9db8619648ae063bc343b6593d4f"></a>BRDctrl_STREAM_CBUF_WAITBLOCK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a686b0ea8a17e454791b00963351a353b"></a>BRDctrl_STREAM_CBUF_WAITBUF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55adcc9f5befd412571656bf6f9325b3579"></a>BRDctrl_STREAM_SETDIR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a96a1ac5b6b45b72aa74b18cc9bee5d68"></a>BRDctrl_STREAM_SETSRC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a9a3ae96bb269efedb5c89354a6e77661"></a>BRDctrl_STREAM_SETDRQ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a71461de5b226117d214129549eff2dc6"></a>BRDctrl_STREAM_RESETFIFO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55acc0f4598a6c4368b604b5a534c1f69a2"></a>BRDctrl_STREAM_CBUF_ADJUST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a38da9e15425ac8551b58f2a0ea540623"></a>BRDctrl_STREAM_CBUF_DONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55ad38fdcbc8a8c59745862208b243edeaa"></a>BRDctrl_STREAM_GETDIR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a67f6bda7303595d132d46e55ba8871b9"></a>BRDctrl_STREAM_VERSION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a388ccfda54c42706ee12a0ca704ade0b"></a>BRDctrl_STREAM_CBUF_WAITBLOCKEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a8c398b7455c3543576163b62edb29ff7"></a>BRDctrl_STREAM_CBUF_WAITBUFEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55afbf9f971289a920f53ecb88bfa7443dc"></a>BRDctrl_STREAM_SETIRQMODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a6e69a7d41a8101c63c688e1453afb7ac"></a>BRDctrl_STREAM_ILLEGAL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a id="a394b3903fbf00ba2b6243f60689a5a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a394b3903fbf00ba2b6243f60689a5a5f">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa9bfdf3e30650ca30d6952ef5b595fa4d"></a>BRDstrm_STAT_RUN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5faafae3fdfcc1df537c0855b9bd00feb82"></a>BRDstrm_STAT_STOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa7a058e3035f5ab53dbdf45b187b60a27"></a>BRDstrm_STAT_DESTROY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5fa9f777de0ad25f8f54ac1b8a537990017"></a>BRDstrm_STAT_BREAK&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00232">232</a></p>
+
+</div>
+</div>
+<a id="ac205be2172292384dd687b5471a87edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac205be2172292384dd687b5471a87edd">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87eddaaf22960d2fee57c53ec34969cec38a1f"></a>BRDstrm_DIR_IN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda0ac13eb3999384057c718fd4c4c59748"></a>BRDstrm_DIR_OUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac205be2172292384dd687b5471a87edda938206d0948bbc552642277446c4fa8e"></a>BRDstrm_DIR_INOUT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00244">244</a></p>
+
+</div>
+</div>
+<a id="a157d5577a5b2f5986037d0d09c7dc77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157d5577a5b2f5986037d0d09c7dc77d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a157d5577a5b2f5986037d0d09c7dc77dacf7a39f84dc394d8b1659d36249d58aa"></a>BRDstrm_DRQ_ALMOST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a157d5577a5b2f5986037d0d09c7dc77da662b08bf9de9f18cb15a95ae5c0b452f"></a>BRDstrm_DRQ_READY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a157d5577a5b2f5986037d0d09c7dc77dab7bd44f4130f4fc1e588849fb790b97c"></a>BRDstrm_DRQ_HALF&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html">ctrlstrm.h</a> строка <a class="el" href="../../df/d2d/ctrlstrm_8h_source.html#l00255">255</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

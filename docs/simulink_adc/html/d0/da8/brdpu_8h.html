@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SIMULINK_ADC: Файл E:/_github/simulink_sm/simulink_adc/src/bardy/brdpu.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SIMULINK_ADC
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Приём данных от АЦП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','Поиск');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_9cc6fcdd0606c05e12b8eb4ba0303406.html">bardy</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл brdpu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="../../d0/da8/brdpu_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a16af7b253440dadd46a80a4b9fddba4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../d0/da8/brdpu_8h.html#a16af7b253440dadd46a80a4b9fddba4dad9b32f5549bc92bf4099dbd9f7885d70">BRDpui_BASEICR</a> = 0x01, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#a16af7b253440dadd46a80a4b9fddba4da7b2280ef362ce193bd3147fee817493a">BRDpui_PCICFG</a> = 0x02, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#a16af7b253440dadd46a80a4b9fddba4daee996a9ddd94009e8fd13dcc2648bb02">BRDpui_SUBICR</a> = 0x03, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#a16af7b253440dadd46a80a4b9fddba4da0e5a8ef73244dc474aac37d5bdf115e6">BRDpui_FRUID</a> = 0x10, 
+<br />
+&#160;&#160;<a class="el" href="../../d0/da8/brdpu_8h.html#a16af7b253440dadd46a80a4b9fddba4da0ceb72e30f18ad393e7e72abdb8eccfc">BRDpui_CFG6678</a> = 0x20, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#a16af7b253440dadd46a80a4b9fddba4da0521d9a3528b1af5d708bc954c027ef2">BRDpui_PLD</a> = 0x100, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#a16af7b253440dadd46a80a4b9fddba4dad80d6482f0324a37a2f097764da177bb">BRDpui_FLASH</a> = 0x200
+<br />
+ }</td></tr>
+<tr class="separator:a16af7b253440dadd46a80a4b9fddba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba01db17f4a2bfbc3db60dc172972a25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../d0/da8/brdpu_8h.html#aba01db17f4a2bfbc3db60dc172972a25a42280e527056b1fc97824ac435235b39">BRDpua_Load</a> = 0x01, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#aba01db17f4a2bfbc3db60dc172972a25ae4d90398127584ec46dd18551b2e151f">BRDpua_Read</a> = 0x02, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#aba01db17f4a2bfbc3db60dc172972a25a4c43eeeaaf567773599ab53c3e5b299f">BRDpua_Write</a> = 0x04, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#aba01db17f4a2bfbc3db60dc172972a25aec3d37fced9ff3546b9d8e0588ff6ff6">BRDpua_Danger</a> = 0x08, 
+<br />
+&#160;&#160;<a class="el" href="../../d0/da8/brdpu_8h.html#aba01db17f4a2bfbc3db60dc172972a25a202e8745b48c7d893ec0281f552da9dc">BRDpua_LOAD</a> = 0x01, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#aba01db17f4a2bfbc3db60dc172972a25a20da335cc41b3788ecd09601888a8f47">BRDpua_READ</a> = 0x02, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#aba01db17f4a2bfbc3db60dc172972a25a2e51961e167cc215e2e628b374630e31">BRDpua_WRITE</a> = 0x04, 
+<a class="el" href="../../d0/da8/brdpu_8h.html#aba01db17f4a2bfbc3db60dc172972a25ac0bab8adafc9d2cda6cd83c70f73f798">BRDpua_DANGER</a> = 0x08
+<br />
+ }</td></tr>
+<tr class="separator:aba01db17f4a2bfbc3db60dc172972a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Перечисления</h2>
+<a id="a16af7b253440dadd46a80a4b9fddba4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16af7b253440dadd46a80a4b9fddba4d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4dad9b32f5549bc92bf4099dbd9f7885d70"></a>BRDpui_BASEICR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da7b2280ef362ce193bd3147fee817493a"></a>BRDpui_PCICFG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4daee996a9ddd94009e8fd13dcc2648bb02"></a>BRDpui_SUBICR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da0e5a8ef73244dc474aac37d5bdf115e6"></a>BRDpui_FRUID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da0ceb72e30f18ad393e7e72abdb8eccfc"></a>BRDpui_CFG6678&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da0521d9a3528b1af5d708bc954c027ef2"></a>BRDpui_PLD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4dad80d6482f0324a37a2f097764da177bb"></a>BRDpui_FLASH&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/da8/brdpu_8h_source.html">brdpu.h</a> строка <a class="el" href="../../d0/da8/brdpu_8h_source.html#l00018">18</a></p>
+
+</div>
+</div>
+<a id="aba01db17f4a2bfbc3db60dc172972a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba01db17f4a2bfbc3db60dc172972a25">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a42280e527056b1fc97824ac435235b39"></a>BRDpua_Load&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25ae4d90398127584ec46dd18551b2e151f"></a>BRDpua_Read&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a4c43eeeaaf567773599ab53c3e5b299f"></a>BRDpua_Write&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25aec3d37fced9ff3546b9d8e0588ff6ff6"></a>BRDpua_Danger&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a202e8745b48c7d893ec0281f552da9dc"></a>BRDpua_LOAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a20da335cc41b3788ecd09601888a8f47"></a>BRDpua_READ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a2e51961e167cc215e2e628b374630e31"></a>BRDpua_WRITE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25ac0bab8adafc9d2cda6cd83c70f73f798"></a>BRDpua_DANGER&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/da8/brdpu_8h_source.html">brdpu.h</a> строка <a class="el" href="../../d0/da8/brdpu_8h_source.html#l00030">30</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

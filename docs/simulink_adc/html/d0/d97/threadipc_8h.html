@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SIMULINK_ADC: Файл E:/_github/simulink_sm/simulink_adc/src/bardy/threadipc.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SIMULINK_ADC
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Приём данных от АЦП</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','Поиск');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_9cc6fcdd0606c05e12b8eb4ba0303406.html">bardy</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл threadipc.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../df/d1b/ipclib_8h_source.html">ipclib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/de7/semipc_8h_source.html">semipc.h</a>&quot;</code><br />
+</div>
+<p><a href="../../d0/d97/threadipc_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db3/structthread__param.html">thread_param</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура передаваемая функции потока в качестве параметра (зависит от операционной системы)  <a href="../../d8/db3/structthread__param.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:aeb0422c5e3749148e6f784b4db29c509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#aeb0422c5e3749148e6f784b4db29c509">CREATE_THREAD_STARTED</a>&#160;&#160;&#160;0x0</td></tr>
+<tr class="separator:aeb0422c5e3749148e6f784b4db29c509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc4c968457f50bdac47139dc9953f2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a2dc4c968457f50bdac47139dc9953f2b">CREATE_THREAD_PAUSED</a>&#160;&#160;&#160;0x1</td></tr>
+<tr class="separator:a2dc4c968457f50bdac47139dc9953f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575c1b4262b09841ed7f08615d8a4967"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a575c1b4262b09841ed7f08615d8a4967">THREAD_START</a>&#160;&#160;&#160;0x2</td></tr>
+<tr class="separator:a575c1b4262b09841ed7f08615d8a4967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8057a9bb0e52c87faca999239125125c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a8057a9bb0e52c87faca999239125125c">THREAD_STOP</a>&#160;&#160;&#160;0x4</td></tr>
+<tr class="separator:a8057a9bb0e52c87faca999239125125c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4726da21bd62a07b14f973b01e7ea53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#ac4726da21bd62a07b14f973b01e7ea53">THREAD_RESUME</a>&#160;&#160;&#160;0x8</td></tr>
+<tr class="separator:ac4726da21bd62a07b14f973b01e7ea53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6cf42265fe26b84cec6c05b498a7b7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#ae6cf42265fe26b84cec6c05b498a7b7c">THREAD_EXIT</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:ae6cf42265fe26b84cec6c05b498a7b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e1aed0fb8b56d84b41f2b91ce42475"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a79e1aed0fb8b56d84b41f2b91ce42475">__IPC_API</a>&#160;&#160;&#160;__stdcall</td></tr>
+<tr class="separator:a79e1aed0fb8b56d84b41f2b91ce42475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a7050846e7144a57bdbbf63e90dadd6f8"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a7050846e7144a57bdbbf63e90dadd6f8">thread_value</a></td></tr>
+<tr class="memdesc:a7050846e7144a57bdbbf63e90dadd6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип значения, возвращаемого функцией потока при завершении  <a href="#a7050846e7144a57bdbbf63e90dadd6f8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7050846e7144a57bdbbf63e90dadd6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e09a6e46c2b70f4887527d16eb71cc"><td class="memItemLeft" align="right" valign="top">typedef pthread_key_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a></td></tr>
+<tr class="separator:a82e09a6e46c2b70f4887527d16eb71cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:abc6d98f4db44b0fc5ef983d5cbbb59ef"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#abc6d98f4db44b0fc5ef983d5cbbb59ef">thread_value</a> (<a class="el" href="../../d0/d97/threadipc_8h.html#a79e1aed0fb8b56d84b41f2b91ce42475">__IPC_API</a> thread_func)(void *)</td></tr>
+<tr class="memdesc:abc6d98f4db44b0fc5ef983d5cbbb59ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип указателя на функцию потока (зависит от операционной системы)  <a href="#abc6d98f4db44b0fc5ef983d5cbbb59ef">Подробнее...</a><br /></td></tr>
+<tr class="separator:abc6d98f4db44b0fc5ef983d5cbbb59ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8e342f4e3f01febfca400d9f740d2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a5e8e342f4e3f01febfca400d9f740d2e">IPC_createThread</a> (const <a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *name, thread_func *function, void *param)</td></tr>
+<tr class="memdesc:a5e8e342f4e3f01febfca400d9f740d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создает поток  <a href="#a5e8e342f4e3f01febfca400d9f740d2e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5e8e342f4e3f01febfca400d9f740d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b1e9ca0aedfbae5583b968f2e95cda5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a5b1e9ca0aedfbae5583b968f2e95cda5">IPC_createThreadEx</a> (const <a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *name, struct <a class="el" href="../../d8/db3/structthread__param.html">thread_param</a> *tp, int flags)</td></tr>
+<tr class="memdesc:a5b1e9ca0aedfbae5583b968f2e95cda5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создает поток  <a href="#a5b1e9ca0aedfbae5583b968f2e95cda5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5b1e9ca0aedfbae5583b968f2e95cda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6a142da21499b17710cbd809075b96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#aec6a142da21499b17710cbd809075b96">IPC_startThread</a> (const <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> handle)</td></tr>
+<tr class="memdesc:aec6a142da21499b17710cbd809075b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция разрешает потоку выполняться (только LINUX)  <a href="#aec6a142da21499b17710cbd809075b96">Подробнее...</a><br /></td></tr>
+<tr class="separator:aec6a142da21499b17710cbd809075b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56bbc86df1fedbf16e091672144b4768"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a56bbc86df1fedbf16e091672144b4768">IPC_stopThread</a> (const <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> handle)</td></tr>
+<tr class="memdesc:a56bbc86df1fedbf16e091672144b4768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция приостанавливает выполнение потока  <a href="#a56bbc86df1fedbf16e091672144b4768">Подробнее...</a><br /></td></tr>
+<tr class="separator:a56bbc86df1fedbf16e091672144b4768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b70a7a870a765a686404d153871d4f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a6b70a7a870a765a686404d153871d4f2">IPC_waitThread</a> (const <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> handle, int timeout)</td></tr>
+<tr class="memdesc:a6b70a7a870a765a686404d153871d4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция ожидает завершения потока  <a href="#a6b70a7a870a765a686404d153871d4f2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6b70a7a870a765a686404d153871d4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffcb94cdabce81e1234f450ab09f46a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#abffcb94cdabce81e1234f450ab09f46a">IPC_deleteThread</a> (<a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> handle)</td></tr>
+<tr class="memdesc:abffcb94cdabce81e1234f450ab09f46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция останавливает поток и удаляет дескриптор потока  <a href="#abffcb94cdabce81e1234f450ab09f46a">Подробнее...</a><br /></td></tr>
+<tr class="separator:abffcb94cdabce81e1234f450ab09f46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35539c70b3b6b60e13a94442e6fb85b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a35539c70b3b6b60e13a94442e6fb85b5">IPC_threadID</a> (void)</td></tr>
+<tr class="memdesc:a35539c70b3b6b60e13a94442e6fb85b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает идентификатор потока  <a href="#a35539c70b3b6b60e13a94442e6fb85b5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a35539c70b3b6b60e13a94442e6fb85b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bdc3766f7fea7d82ba46b5e8053d29f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a1bdc3766f7fea7d82ba46b5e8053d29f">IPC_createTlsKey</a> (void)</td></tr>
+<tr class="separator:a1bdc3766f7fea7d82ba46b5e8053d29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a94d9ed0191daf6c8ade7d44e228f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#ab7a94d9ed0191daf6c8ade7d44e228f0">IPC_tlsGetValue</a> (<a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a> key)</td></tr>
+<tr class="separator:ab7a94d9ed0191daf6c8ade7d44e228f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a5655dd3c5f2d50cfae8812efbb6c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#a74a5655dd3c5f2d50cfae8812efbb6c3">IPC_tlsSetValue</a> (<a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a> key, void *ptr)</td></tr>
+<tr class="separator:a74a5655dd3c5f2d50cfae8812efbb6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef380ab2fed5265a0b1c3510a9f52e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/threadipc_8h.html#aaef380ab2fed5265a0b1c3510a9f52e4">IPC_deleteTlsKey</a> (<a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a> key)</td></tr>
+<tr class="separator:aaef380ab2fed5265a0b1c3510a9f52e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a79e1aed0fb8b56d84b41f2b91ce42475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e1aed0fb8b56d84b41f2b91ce42475">&#9670;&nbsp;</a></span>__IPC_API</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __IPC_API&#160;&#160;&#160;__stdcall</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/d97/threadipc_8h_source.html">threadipc.h</a> строка <a class="el" href="../../d0/d97/threadipc_8h_source.html#l00030">30</a></p>
+
+</div>
+</div>
+<a id="a2dc4c968457f50bdac47139dc9953f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc4c968457f50bdac47139dc9953f2b">&#9670;&nbsp;</a></span>CREATE_THREAD_PAUSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CREATE_THREAD_PAUSED&#160;&#160;&#160;0x1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/d97/threadipc_8h_source.html">threadipc.h</a> строка <a class="el" href="../../d0/d97/threadipc_8h_source.html#l00016">16</a></p>
+
+</div>
+</div>
+<a id="aeb0422c5e3749148e6f784b4db29c509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb0422c5e3749148e6f784b4db29c509">&#9670;&nbsp;</a></span>CREATE_THREAD_STARTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CREATE_THREAD_STARTED&#160;&#160;&#160;0x0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/d97/threadipc_8h_source.html">threadipc.h</a> строка <a class="el" href="../../d0/d97/threadipc_8h_source.html#l00015">15</a></p>
+
+</div>
+</div>
+<a id="ae6cf42265fe26b84cec6c05b498a7b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6cf42265fe26b84cec6c05b498a7b7c">&#9670;&nbsp;</a></span>THREAD_EXIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_EXIT&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/d97/threadipc_8h_source.html">threadipc.h</a> строка <a class="el" href="../../d0/d97/threadipc_8h_source.html#l00020">20</a></p>
+
+</div>
+</div>
+<a id="ac4726da21bd62a07b14f973b01e7ea53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4726da21bd62a07b14f973b01e7ea53">&#9670;&nbsp;</a></span>THREAD_RESUME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_RESUME&#160;&#160;&#160;0x8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/d97/threadipc_8h_source.html">threadipc.h</a> строка <a class="el" href="../../d0/d97/threadipc_8h_source.html#l00019">19</a></p>
+
+</div>
+</div>
+<a id="a575c1b4262b09841ed7f08615d8a4967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575c1b4262b09841ed7f08615d8a4967">&#9670;&nbsp;</a></span>THREAD_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_START&#160;&#160;&#160;0x2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/d97/threadipc_8h_source.html">threadipc.h</a> строка <a class="el" href="../../d0/d97/threadipc_8h_source.html#l00017">17</a></p>
+
+</div>
+</div>
+<a id="a8057a9bb0e52c87faca999239125125c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8057a9bb0e52c87faca999239125125c">&#9670;&nbsp;</a></span>THREAD_STOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THREAD_STOP&#160;&#160;&#160;0x4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/d97/threadipc_8h_source.html">threadipc.h</a> строка <a class="el" href="../../d0/d97/threadipc_8h_source.html#l00018">18</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Типы</h2>
+<a id="a82e09a6e46c2b70f4887527d16eb71cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e09a6e46c2b70f4887527d16eb71cc">&#9670;&nbsp;</a></span>IPC_tls_key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef pthread_key_t <a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/d97/threadipc_8h_source.html">threadipc.h</a> строка <a class="el" href="../../d0/d97/threadipc_8h_source.html#l00102">102</a></p>
+
+</div>
+</div>
+<a id="a7050846e7144a57bdbbf63e90dadd6f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7050846e7144a57bdbbf63e90dadd6f8">&#9670;&nbsp;</a></span>thread_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="../../d0/d97/threadipc_8h.html#a7050846e7144a57bdbbf63e90dadd6f8">thread_value</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип значения, возвращаемого функцией потока при завершении </p>
+
+<p class="definition">См. определение в файле <a class="el" href="../../d0/d97/threadipc_8h_source.html">threadipc.h</a> строка <a class="el" href="../../d0/d97/threadipc_8h_source.html#l00031">31</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a5e8e342f4e3f01febfca400d9f740d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8e342f4e3f01febfca400d9f740d2e">&#9670;&nbsp;</a></span>IPC_createThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> IPC_createThread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">thread_func *&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция создает поток </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- имя потока </td></tr>
+    <tr><td class="paramname">function</td><td>- указатель на рабочую функцию потока </td></tr>
+    <tr><td class="paramname">param</td><td>- параметры передаваемые рабочей функции потока </td></tr>
+    <tr><td class="paramname">flags</td><td>- флаги потока </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>в случае ошибки возвращает NULL </dd></dl>
+
+<p class="reference">Используется в <a class="el" href="../../d9/d58/adc__ctrl_8cpp_source.html#l01042">DirectFile()</a>.</p>
+
+</div>
+</div>
+<a id="a5b1e9ca0aedfbae5583b968f2e95cda5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1e9ca0aedfbae5583b968f2e95cda5">&#9670;&nbsp;</a></span>IPC_createThreadEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a> IPC_createThreadEx </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d1b/ipclib_8h.html#adb5dd390f7f4326cb284f9c52ea6e20f">IPC_str</a> *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="../../d8/db3/structthread__param.html">thread_param</a> *&#160;</td>
+          <td class="paramname"><em>tp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция создает поток </p>
+<p>Для синхронизации действий с потоком исрользовать семафор </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>- имя потока </td></tr>
+    <tr><td class="paramname">tp</td><td>- парметры для потока, заполняются пользователем </td></tr>
+    <tr><td class="paramname">flags</td><td>- флаги потока </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>в случае ошибки возвращает NULL </dd></dl>
+
+</div>
+</div>
+<a id="a1bdc3766f7fea7d82ba46b5e8053d29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bdc3766f7fea7d82ba46b5e8053d29f">&#9670;&nbsp;</a></span>IPC_createTlsKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> <a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a> IPC_createTlsKey </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abffcb94cdabce81e1234f450ab09f46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffcb94cdabce81e1234f450ab09f46a">&#9670;&nbsp;</a></span>IPC_deleteThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_deleteThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция останавливает поток и удаляет дескриптор потока </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>- дескриптор разделяемой памяти </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>в случае ошибки возвращает IPC_INVALID_HANDLE или IPC_GENERAL_ERROR </dd></dl>
+
+<p class="reference">Используется в <a class="el" href="../../d9/d58/adc__ctrl_8cpp_source.html#l01042">DirectFile()</a>.</p>
+
+</div>
+</div>
+<a id="aaef380ab2fed5265a0b1c3510a9f52e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef380ab2fed5265a0b1c3510a9f52e4">&#9670;&nbsp;</a></span>IPC_deleteTlsKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_deleteTlsKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec6a142da21499b17710cbd809075b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec6a142da21499b17710cbd809075b96">&#9670;&nbsp;</a></span>IPC_startThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_startThread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция разрешает потоку выполняться (только LINUX) </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>- дескриптор потока </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a56bbc86df1fedbf16e091672144b4768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56bbc86df1fedbf16e091672144b4768">&#9670;&nbsp;</a></span>IPC_stopThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_stopThread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция приостанавливает выполнение потока </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>- дескриптор потока </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a35539c70b3b6b60e13a94442e6fb85b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35539c70b3b6b60e13a94442e6fb85b5">&#9670;&nbsp;</a></span>IPC_threadID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> size_t IPC_threadID </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция возвращает идентификатор потока </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает идентификатор потока </dd></dl>
+
+</div>
+</div>
+<a id="ab7a94d9ed0191daf6c8ade7d44e228f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a94d9ed0191daf6c8ade7d44e228f0">&#9670;&nbsp;</a></span>IPC_tlsGetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> void* IPC_tlsGetValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74a5655dd3c5f2d50cfae8812efbb6c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a5655dd3c5f2d50cfae8812efbb6c3">&#9670;&nbsp;</a></span>IPC_tlsSetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_tlsSetValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d97/threadipc_8h.html#a82e09a6e46c2b70f4887527d16eb71cc">IPC_tls_key</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b70a7a870a765a686404d153871d4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b70a7a870a765a686404d153871d4f2">&#9670;&nbsp;</a></span>IPC_waitThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d1b/ipclib_8h.html#a1164f0d8fcbbc8efcc648ff5132f2217">GIPCY_API</a> int IPC_waitThread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d1b/ipclib_8h.html#aba75261498211883650fdce95a9201fa">IPC_handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция ожидает завершения потока </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>- дескриптор потока </td></tr>
+    <tr><td class="paramname">timeout</td><td>- время ожидания в мс </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Используется в <a class="el" href="../../d9/d58/adc__ctrl_8cpp_source.html#l01042">DirectFile()</a>.</p>
+
+</div>
+</div>
+<a id="abc6d98f4db44b0fc5ef983d5cbbb59ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6d98f4db44b0fc5ef983d5cbbb59ef">&#9670;&nbsp;</a></span>thread_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="../../d0/d97/threadipc_8h.html#a7050846e7144a57bdbbf63e90dadd6f8">thread_value</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d97/threadipc_8h.html#a79e1aed0fb8b56d84b41f2b91ce42475">__IPC_API</a>&#160;</td>
+          <td class="paramname"><em>thread_func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип указателя на функцию потока (зависит от операционной системы) </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
